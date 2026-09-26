@@ -1,0 +1,33 @@
+{
+  "title": "Paper Title (Anonymous)",
+  "description": "Replace this text with a one-sentence summary of your method. Keep the page anonymous for double-blind review.",
+  "audio": [
+    {
+      "title": "Example 1",
+      "note": "Short description of this comparison.",
+      "clips": [
+        { "label": "Input", "src": "assets/audio/ex1_input.wav" },
+        { "label": "Baseline", "src": "assets/audio/ex1_baseline.wav" },
+        { "label": "Ours", "src": "assets/audio/ex1_ours.wav" }
+      ]
+    },
+    {
+      "title": "Example 2",
+      "note": "Another qualitative example.",
+      "clips": [
+        { "label": "Input", "src": "assets/audio/ex2_input.wav" },
+        { "label": "Ours", "src": "assets/audio/ex2_ours.wav" }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "caption": "Overview figure — replace with assets/images/overview.png",
+      "src": "assets/images/overview.png"
+    },
+    {
+      "caption": "Qualitative comparison — replace with assets/images/compare.png",
+      "src": "assets/images/compare.png"
+    }
+  ]
+}
