@@ -150,7 +150,7 @@ main {
 .section-head p {
   margin: 0;
   color: var(--muted);
-  max-width: 36rem;
+  max-width: none;
 }
 
 .stack {
