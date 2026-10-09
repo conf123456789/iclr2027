@@ -239,7 +239,7 @@
   ],
   "audio": [
     {
-      "title": "Zero-shot",
+      "title": "Zero-shot spatial TTS",
       "note": "The model receives a short reference clip — the source voice and its starting position — plus a target text, and must synthesise the binaural target.",
       "examples": [
         {
@@ -416,7 +416,7 @@
       ]
     },
     {
-      "title": "Instruct",
+      "title": "Instruct spatial TTS",
       "note": "No reference audio: the model is driven by a text description of the target style, the utterance to speak, and an explicit spatial instruction.",
       "examples": [
         {
@@ -644,7 +644,7 @@
       "title": "Content",
       "examples": [
         {
-          "title": "move_06_libritts_test_clean__1089__134691__1089_134691_000008_000003__delete__v1_1_3cfaaf0214",
+          "title": "Delete rank 1",
           "note": "Delete \"shallow\".",
           "clips": [
             {
@@ -658,49 +658,7 @@
           ]
         },
         {
-          "title": "move_07_libritts_test_clean__1089__134691__1089_134691_000027_000002__insert__v1_1_2a8e7d8ac5",
-          "note": "Insert \"of the evening\" after \"air\".",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/content/move_07_libritts_test_clean__1089__134691__1089_134691_000027_000002__insert__v1_1_2a8e7d8ac5_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/content/move_07_libritts_test_clean__1089__134691__1089_134691_000027_000002__insert__v1_1_2a8e7d8ac5_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "move_09_libritts_test_clean__1089__134686__1089_134686_000032_000006__insert__v1_1_e1d563eddd",
-          "note": "Insert \"in the region\" after \"idolaters\".",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/content/move_09_libritts_test_clean__1089__134686__1089_134686_000032_000006__insert__v1_1_e1d563eddd_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/content/move_09_libritts_test_clean__1089__134686__1089_134686_000032_000006__insert__v1_1_e1d563eddd_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "orbit_03_libritts_test_clean__1089__134686__1089_134686_000023_000000__replace__v1_1_26ad7856e3",
-          "note": "Replace \"arid\" with \"dry\".",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/content/orbit_03_libritts_test_clean__1089__134686__1089_134686_000023_000000__replace__v1_1_26ad7856e3_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/content/orbit_03_libritts_test_clean__1089__134686__1089_134686_000023_000000__replace__v1_1_26ad7856e3_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "orbit_04_libritts_test_clean__1089__134686__1089_134686_000002_000003__delete__v1_1_aaf2c49c3b",
+          "title": "Delete rank 2",
           "note": "Delete \"soft\".",
           "clips": [
             {
@@ -714,7 +672,49 @@
           ]
         },
         {
-          "title": "orbit_08_libritts_test_clean__1089__134691__1089_134691_000027_000003__insert__v1_1_cf4f2389c4",
+          "title": "Delete rank 3",
+          "note": "Delete \"elaborate\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/content/static_05_libritts_test_clean__1089__134691__1089_134691_000010_000000__delete__v1_1_1876a1831e_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/content/static_05_libritts_test_clean__1089__134691__1089_134691_000010_000000__delete__v1_1_1876a1831e_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Insert rank 1",
+          "note": "Insert \"of the evening\" after \"air\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/content/move_07_libritts_test_clean__1089__134691__1089_134691_000027_000002__insert__v1_1_2a8e7d8ac5_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/content/move_07_libritts_test_clean__1089__134691__1089_134691_000027_000002__insert__v1_1_2a8e7d8ac5_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Insert rank 2",
+          "note": "Insert \"in the region\" after \"idolaters\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/content/move_09_libritts_test_clean__1089__134686__1089_134686_000032_000006__insert__v1_1_e1d563eddd_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/content/move_09_libritts_test_clean__1089__134686__1089_134686_000032_000006__insert__v1_1_e1d563eddd_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Insert rank 3",
           "note": "Insert \"once ruled\" after \"kingdom\".",
           "clips": [
             {
@@ -728,7 +728,21 @@
           ]
         },
         {
-          "title": "static_01_libritts_test_clean__1089__134691__1089_134691_000004_000002__replace__v1_1_4eeaae4c6c",
+          "title": "Replace rank 1",
+          "note": "Replace \"arid\" with \"dry\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/content/orbit_03_libritts_test_clean__1089__134686__1089_134686_000023_000000__replace__v1_1_26ad7856e3_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/content/orbit_03_libritts_test_clean__1089__134686__1089_134686_000023_000000__replace__v1_1_26ad7856e3_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Replace rank 2",
           "note": "Replace \"antagonism\" with \"conflict\".",
           "clips": [
             {
@@ -742,7 +756,7 @@
           ]
         },
         {
-          "title": "static_02_libritts_test_clean__1089__134691__1089_134691_000005_000005__replace__v1_1_c0a55a5454",
+          "title": "Replace rank 3",
           "note": "Replace \"pattering\" with \"drumming\".",
           "clips": [
             {
@@ -754,20 +768,6 @@
               "src": "assets/audio/edit/content/static_02_libritts_test_clean__1089__134691__1089_134691_000005_000005__replace__v1_1_c0a55a5454_generated.wav"
             }
           ]
-        },
-        {
-          "title": "static_05_libritts_test_clean__1089__134691__1089_134691_000010_000000__delete__v1_1_1876a1831e",
-          "note": "Delete \"elaborate\".",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/content/static_05_libritts_test_clean__1089__134691__1089_134691_000010_000000__delete__v1_1_1876a1831e_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/content/static_05_libritts_test_clean__1089__134691__1089_134691_000010_000000__delete__v1_1_1876a1831e_generated.wav"
-            }
-          ]
         }
       ]
     },
@@ -775,49 +775,7 @@
       "title": "Emotion",
       "examples": [
         {
-          "title": "move_04_iemocap__surprise__female__c16be6b467ed",
-          "note": "Change the emotion to fearful.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/emotion/move_04_iemocap__surprise__female__c16be6b467ed_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/emotion/move_04_iemocap__surprise__female__c16be6b467ed_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "move_07_iemocap__neutral__female__398b90edc338",
-          "note": "Change the emotion to happy.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/emotion/move_07_iemocap__neutral__female__398b90edc338_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/emotion/move_07_iemocap__neutral__female__398b90edc338_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "move_09_iemocap__excited__female__b091c32447ac",
-          "note": "Change the emotion to surprise.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/emotion/move_09_iemocap__excited__female__b091c32447ac_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/emotion/move_09_iemocap__excited__female__b091c32447ac_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "orbit_01_iemocap__fearful__male__f8db948bcf79",
+          "title": "Emotion: angry rank 1",
           "note": "Change the emotion to angry.",
           "clips": [
             {
@@ -831,35 +789,7 @@
           ]
         },
         {
-          "title": "orbit_06_iemocap__angry__female__03415749a3c9",
-          "note": "Change the emotion to frustrated.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/emotion/orbit_06_iemocap__angry__female__03415749a3c9_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/emotion/orbit_06_iemocap__angry__female__03415749a3c9_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "orbit_08_iemocap__frustrated__female__0319855e9920",
-          "note": "Change the emotion to sad.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/emotion/orbit_08_iemocap__frustrated__female__0319855e9920_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/emotion/orbit_08_iemocap__frustrated__female__0319855e9920_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "static_02_libritts_test_clean__neutral__2300__n_bcefc09bccaa",
+          "title": "Emotion: excited rank 1",
           "note": "Change the emotion to excited.",
           "clips": [
             {
@@ -873,7 +803,7 @@
           ]
         },
         {
-          "title": "static_03_libritts_test_clean__neutral__121__n_81bce1ef13a1",
+          "title": "Emotion: excited rank 2",
           "note": "Change the emotion to excited.",
           "clips": [
             {
@@ -887,7 +817,35 @@
           ]
         },
         {
-          "title": "static_05_iemocap__angry__female__889fd10f6d12",
+          "title": "Emotion: fearful rank 1",
+          "note": "Change the emotion to fearful.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/move_04_iemocap__surprise__female__c16be6b467ed_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/move_04_iemocap__surprise__female__c16be6b467ed_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Emotion: frustrated rank 1",
+          "note": "Change the emotion to frustrated.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/orbit_06_iemocap__angry__female__03415749a3c9_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/orbit_06_iemocap__angry__female__03415749a3c9_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Emotion: frustrated rank 2",
           "note": "Change the emotion to frustrated.",
           "clips": [
             {
@@ -899,6 +857,48 @@
               "src": "assets/audio/edit/emotion/static_05_iemocap__angry__female__889fd10f6d12_generated.wav"
             }
           ]
+        },
+        {
+          "title": "Emotion: happy rank 1",
+          "note": "Change the emotion to happy.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/move_07_iemocap__neutral__female__398b90edc338_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/move_07_iemocap__neutral__female__398b90edc338_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Emotion: sad rank 1",
+          "note": "Change the emotion to sad.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/orbit_08_iemocap__frustrated__female__0319855e9920_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/orbit_08_iemocap__frustrated__female__0319855e9920_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Emotion: surprise rank 1",
+          "note": "Change the emotion to surprise.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/move_09_iemocap__excited__female__b091c32447ac_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/move_09_iemocap__excited__female__b091c32447ac_generated.wav"
+            }
+          ]
         }
       ]
     },
@@ -906,7 +906,7 @@
       "title": "Paralinguistic",
       "examples": [
         {
-          "title": "move_01_libritts_test_clean__1089__134691__1089_134691_000008_000001__add_breath",
+          "title": "Add breath rank 1",
           "note": "Add audible breathing sounds to the speech.",
           "clips": [
             {
@@ -920,7 +920,7 @@
           ]
         },
         {
-          "title": "move_02_libritts_test_clean__121__127105__121_127105_000043_000007__add_breath",
+          "title": "Add breath rank 2",
           "note": "Add audible breathing sounds to the speech.",
           "clips": [
             {
@@ -934,63 +934,7 @@
           ]
         },
         {
-          "title": "move_06_disfluencyspeech_en__train__0000942__remove_cough",
-          "note": "Remove audible coughing sounds from the speech.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/paralinguistic/move_06_disfluencyspeech_en__train__0000942__remove_cough_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/paralinguistic/move_06_disfluencyspeech_en__train__0000942__remove_cough_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "orbit_03_libritts_test_clean__121__127105__121_127105_000042_000001__add_laugh",
-          "note": "Add audible laughter to the speech.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/paralinguistic/orbit_03_libritts_test_clean__121__127105__121_127105_000042_000001__add_laugh_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/paralinguistic/orbit_03_libritts_test_clean__121__127105__121_127105_000042_000001__add_laugh_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "orbit_04_libritts_test_clean__121__121726__121_121726_000004_000003__add_laugh",
-          "note": "Add audible laughter to the speech.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/paralinguistic/orbit_04_libritts_test_clean__121__121726__121_121726_000004_000003__add_laugh_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/paralinguistic/orbit_04_libritts_test_clean__121__121726__121_121726_000004_000003__add_laugh_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "orbit_09_nonverbaltts_en__train__0000105__remove_sigh",
-          "note": "Remove audible sighing sounds from the speech.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/paralinguistic/orbit_09_nonverbaltts_en__train__0000105__remove_sigh_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/paralinguistic/orbit_09_nonverbaltts_en__train__0000105__remove_sigh_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "static_05_libritts_test_clean__1089__134691__1089_134691_000054_000000__add_cough",
+          "title": "Add cough rank 1",
           "note": "Add audible coughing sounds to the speech.",
           "clips": [
             {
@@ -1004,21 +948,35 @@
           ]
         },
         {
-          "title": "static_07_disfluencyspeech_en__train__0000282__remove_sigh",
-          "note": "Remove audible sighing sounds from the speech.",
+          "title": "Add laugh rank 1",
+          "note": "Add audible laughter to the speech.",
           "clips": [
             {
               "label": "Original",
-              "src": "assets/audio/edit/paralinguistic/static_07_disfluencyspeech_en__train__0000282__remove_sigh_prompt.wav"
+              "src": "assets/audio/edit/paralinguistic/orbit_03_libritts_test_clean__121__127105__121_127105_000042_000001__add_laugh_prompt.wav"
             },
             {
               "label": "Edited",
-              "src": "assets/audio/edit/paralinguistic/static_07_disfluencyspeech_en__train__0000282__remove_sigh_generated.wav"
+              "src": "assets/audio/edit/paralinguistic/orbit_03_libritts_test_clean__121__127105__121_127105_000042_000001__add_laugh_generated.wav"
             }
           ]
         },
         {
-          "title": "static_08_libritts_test_clean__1089__134691__1089_134691_000013_000003__add_sigh",
+          "title": "Add laugh rank 2",
+          "note": "Add audible laughter to the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/orbit_04_libritts_test_clean__121__121726__121_121726_000004_000003__add_laugh_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/orbit_04_libritts_test_clean__121__121726__121_121726_000004_000003__add_laugh_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Add sigh rank 1",
           "note": "Add audible sighing sounds to the speech.",
           "clips": [
             {
@@ -1030,6 +988,48 @@
               "src": "assets/audio/edit/paralinguistic/static_08_libritts_test_clean__1089__134691__1089_134691_000013_000003__add_sigh_generated.wav"
             }
           ]
+        },
+        {
+          "title": "Remove cough rank 1",
+          "note": "Remove audible coughing sounds from the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/move_06_disfluencyspeech_en__train__0000942__remove_cough_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/move_06_disfluencyspeech_en__train__0000942__remove_cough_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Remove sigh rank 1",
+          "note": "Remove audible sighing sounds from the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/orbit_09_nonverbaltts_en__train__0000105__remove_sigh_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/orbit_09_nonverbaltts_en__train__0000105__remove_sigh_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Remove sigh rank 2",
+          "note": "Remove audible sighing sounds from the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/static_07_disfluencyspeech_en__train__0000282__remove_sigh_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/static_07_disfluencyspeech_en__train__0000282__remove_sigh_generated.wav"
+            }
+          ]
         }
       ]
     },
@@ -1037,35 +1037,7 @@
       "title": "Prosody",
       "examples": [
         {
-          "title": "move_01_libritts_test_clean__speed__54f12e5f",
-          "note": "Speak faster.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/prosody/move_01_libritts_test_clean__speed__54f12e5f_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/prosody/move_01_libritts_test_clean__speed__54f12e5f_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "move_03_libritts_test_clean__speed__7a26ac4b",
-          "note": "Speak slower.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/prosody/move_03_libritts_test_clean__speed__7a26ac4b_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/prosody/move_03_libritts_test_clean__speed__7a26ac4b_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "move_06_libritts_test_clean__pitch__5d5d71c8",
+          "title": "Pitch rank 1",
           "note": "Raise the pitch.",
           "clips": [
             {
@@ -1079,7 +1051,7 @@
           ]
         },
         {
-          "title": "orbit_05_libritts_test_clean__pitch__b2bd7467",
+          "title": "Pitch rank 2",
           "note": "Lower the pitch.",
           "clips": [
             {
@@ -1093,49 +1065,7 @@
           ]
         },
         {
-          "title": "orbit_07_libritts_test_clean__stress__429550bc",
-          "note": "Emphasize the word \"birds\".",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/prosody/orbit_07_libritts_test_clean__stress__429550bc_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/prosody/orbit_07_libritts_test_clean__stress__429550bc_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "orbit_09_libritts_test_clean__stress__42363c89",
-          "note": "Emphasize the word \"success\".",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/prosody/orbit_09_libritts_test_clean__stress__42363c89_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/prosody/orbit_09_libritts_test_clean__stress__42363c89_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "static_02_libritts_test_clean__speed__c4a1ef8b",
-          "note": "Speak faster.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/prosody/static_02_libritts_test_clean__speed__c4a1ef8b_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/prosody/static_02_libritts_test_clean__speed__c4a1ef8b_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "static_04_libritts_test_clean__pitch__f6eaf3c5",
+          "title": "Pitch rank 3",
           "note": "Raise the pitch.",
           "clips": [
             {
@@ -1149,7 +1079,77 @@
           ]
         },
         {
-          "title": "static_08_libritts_test_clean__stress__32ba80f7",
+          "title": "Speed rank 1",
+          "note": "Speak faster.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/prosody/move_01_libritts_test_clean__speed__54f12e5f_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/prosody/move_01_libritts_test_clean__speed__54f12e5f_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Speed rank 2",
+          "note": "Speak slower.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/prosody/move_03_libritts_test_clean__speed__7a26ac4b_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/prosody/move_03_libritts_test_clean__speed__7a26ac4b_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Speed rank 3",
+          "note": "Speak faster.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/prosody/static_02_libritts_test_clean__speed__c4a1ef8b_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/prosody/static_02_libritts_test_clean__speed__c4a1ef8b_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Stress rank 1",
+          "note": "Emphasize the word \"birds\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/prosody/orbit_07_libritts_test_clean__stress__429550bc_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/prosody/orbit_07_libritts_test_clean__stress__429550bc_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Stress rank 2",
+          "note": "Emphasize the word \"success\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/prosody/orbit_09_libritts_test_clean__stress__42363c89_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/prosody/orbit_09_libritts_test_clean__stress__42363c89_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Stress rank 3",
           "note": "Emphasize the word \"magic\".",
           "clips": [
             {
@@ -1168,7 +1168,7 @@
       "title": "Rendering",
       "examples": [
         {
-          "title": "move_01_libritts_test_clean__stress__dc9ce579",
+          "title": "Rendering (class) rank 1",
           "note": "Change the spatial state of the speech so the sound starts from the front-right, 13° above the horizon, close, about 0.9 m away and ends at the front-left, 28° below the horizon, about 2.6 m away, holding still for the first ~23% and the last ~18% of the clip.",
           "clips": [
             {
@@ -1182,7 +1182,7 @@
           ]
         },
         {
-          "title": "move_02_libritts_test_clean__stress__7f963ab9",
+          "title": "Rendering (class) rank 2",
           "note": "Change the spatial state of the speech so the sound starts from the front, 17° below the horizon, close, about 1.2 m away and ends at the front, 24° below the horizon, far out, about 3.1 m away, holding still for the first ~21% and the last ~19% of the clip.",
           "clips": [
             {
@@ -1196,7 +1196,7 @@
           ]
         },
         {
-          "title": "move_03_libritts_test_clean__stress__6421bf42",
+          "title": "Rendering (class) rank 3",
           "note": "Change the spatial state of the speech so the sound starts from the front, 58° above the horizon, about 2.8 m away and ends at the right, level with the listener, far out, about 4.6 m away, holding still for the first ~14% and the last ~23% of the clip.",
           "clips": [
             {
@@ -1210,35 +1210,7 @@
           ]
         },
         {
-          "title": "orbit_01_libritts_test_clean__pitch__5e227c0c",
-          "note": "Change the spatial state of the speech so the sound circles around the listener at 10° above the horizon, far out, about 3.3 m away, starting from directly to the left and going toward the listener's right first, covering 1.8 revolution(s) over the clip.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/rendering/orbit_01_libritts_test_clean__pitch__5e227c0c_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/rendering/orbit_01_libritts_test_clean__pitch__5e227c0c_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "orbit_02_libritts_test_clean__stress__e019ac1f",
-          "note": "Change the spatial state of the speech so the sound circles around the listener at 47° above the horizon, about 2.9 m away, starting from 33° to the right of directly behind and going toward the listener's left first, covering 1.0 revolution(s) over the clip.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/rendering/orbit_02_libritts_test_clean__stress__e019ac1f_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/rendering/orbit_02_libritts_test_clean__stress__e019ac1f_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "orbit_03_libritts_test_clean__pitch__1422e9d5",
+          "title": "Rendering (class) rank 4",
           "note": "Change the spatial state of the speech so the sound circles around the listener at 8° below the horizon, far out, about 3.1 m away, starting from the back-right and going toward the listener's left first, covering 0.9 revolution(s) over the clip.",
           "clips": [
             {
@@ -1252,21 +1224,7 @@
           ]
         },
         {
-          "title": "static_01_libritts_test_clean__pitch__03766dcc",
-          "note": "Change the spatial state of the speech to 48° to the left of directly behind, 45° above the horizon, far out, about 4.5 m away.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/rendering/static_01_libritts_test_clean__pitch__03766dcc_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/rendering/static_01_libritts_test_clean__pitch__03766dcc_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "static_02_libritts_test_clean__stress__f2232f65",
+          "title": "Rendering (class) rank 5",
           "note": "Change the spatial state of the speech to the back-left, 15° below the horizon, very close, about 0.4 m away.",
           "clips": [
             {
@@ -1280,7 +1238,7 @@
           ]
         },
         {
-          "title": "static_03_libritts_test_clean__speed__7dbae2f1",
+          "title": "Rendering (class) rank 6",
           "note": "Change the spatial state of the speech to the front-left, 50° above the horizon, about 1.7 m away.",
           "clips": [
             {
@@ -1292,6 +1250,48 @@
               "src": "assets/audio/edit/rendering/static_03_libritts_test_clean__speed__7dbae2f1_generated.wav"
             }
           ]
+        },
+        {
+          "title": "Rendering (precise) rank 1",
+          "note": "Change the spatial state of the speech so the sound circles around the listener at 10° above the horizon, far out, about 3.3 m away, starting from directly to the left and going toward the listener's right first, covering 1.8 revolution(s) over the clip.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/orbit_01_libritts_test_clean__pitch__5e227c0c_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/orbit_01_libritts_test_clean__pitch__5e227c0c_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Rendering (precise) rank 2",
+          "note": "Change the spatial state of the speech so the sound circles around the listener at 47° above the horizon, about 2.9 m away, starting from 33° to the right of directly behind and going toward the listener's left first, covering 1.0 revolution(s) over the clip.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/orbit_02_libritts_test_clean__stress__e019ac1f_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/orbit_02_libritts_test_clean__stress__e019ac1f_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Rendering (precise) rank 3",
+          "note": "Change the spatial state of the speech to 48° to the left of directly behind, 45° above the horizon, far out, about 4.5 m away.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/static_01_libritts_test_clean__pitch__03766dcc_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/static_01_libritts_test_clean__pitch__03766dcc_generated.wav"
+            }
+          ]
         }
       ]
     },
@@ -1299,7 +1299,7 @@
       "title": "Spatial state",
       "examples": [
         {
-          "title": "move_to_move_07_libritts_test_clean__1089__134691__1089_134691_000024_000001",
+          "title": "move → move rank 1",
           "note": "",
           "clips": [
             {
@@ -1313,7 +1313,7 @@
           ]
         },
         {
-          "title": "move_to_orbit_02_libritts_test_clean__1089__134686__1089_134686_000024_000001",
+          "title": "move → orbit rank 1",
           "note": "",
           "clips": [
             {
@@ -1327,7 +1327,7 @@
           ]
         },
         {
-          "title": "move_to_static_05_libritts_test_clean__1089__134691__1089_134691_000008_000003",
+          "title": "move → static rank 1",
           "note": "",
           "clips": [
             {
@@ -1341,7 +1341,7 @@
           ]
         },
         {
-          "title": "orbit_to_move_09_libritts_test_clean__1089__134691__1089_134691_000025_000003",
+          "title": "orbit → move rank 1",
           "note": "",
           "clips": [
             {
@@ -1355,7 +1355,7 @@
           ]
         },
         {
-          "title": "orbit_to_orbit_06_libritts_test_clean__1089__134691__1089_134691_000016_000001",
+          "title": "orbit → orbit rank 1",
           "note": "",
           "clips": [
             {
@@ -1369,7 +1369,7 @@
           ]
         },
         {
-          "title": "orbit_to_static_01_libritts_test_clean__1089__134686__1089_134686_000009_000000",
+          "title": "orbit → static rank 1",
           "note": "",
           "clips": [
             {
@@ -1383,7 +1383,7 @@
           ]
         },
         {
-          "title": "static_to_move_04_libritts_test_clean__1089__134691__1089_134691_000008_000001",
+          "title": "static → move rank 1",
           "note": "",
           "clips": [
             {
@@ -1397,7 +1397,7 @@
           ]
         },
         {
-          "title": "static_to_orbit_08_libritts_test_clean__1089__134691__1089_134691_000024_000003",
+          "title": "static → orbit rank 1",
           "note": "",
           "clips": [
             {
@@ -1411,7 +1411,7 @@
           ]
         },
         {
-          "title": "static_to_static_03_libritts_test_clean__1089__134686__1089_134686_000028_000002",
+          "title": "static → static rank 1",
           "note": "",
           "clips": [
             {
