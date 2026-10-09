@@ -620,22 +620,12 @@
       ]
     }
   ],
-  "images": [
-    {
-      "caption": "Overview figure — replace with assets/images/overview.png",
-      "src": "assets/images/overview.png"
-    },
-    {
-      "caption": "Qualitative comparison — replace with assets/images/compare.png",
-      "src": "assets/images/compare.png"
-    }
-  ],
   "edit": [
     {
       "title": "Content Editing",
       "examples": [
         {
-          "title": "Delete rank 1",
+          "title": "delete rank 1",
           "clips": [
             {
               "label": "Original",
@@ -654,7 +644,7 @@
           ]
         },
         {
-          "title": "Delete rank 2",
+          "title": "delete rank 2",
           "clips": [
             {
               "label": "Original",
@@ -673,7 +663,7 @@
           ]
         },
         {
-          "title": "Delete rank 3",
+          "title": "delete rank 3",
           "clips": [
             {
               "label": "Original",
@@ -692,7 +682,7 @@
           ]
         },
         {
-          "title": "Insert rank 1",
+          "title": "insert rank 1",
           "clips": [
             {
               "label": "Original",
@@ -711,7 +701,7 @@
           ]
         },
         {
-          "title": "Insert rank 2",
+          "title": "insert rank 2",
           "clips": [
             {
               "label": "Original",
@@ -730,7 +720,7 @@
           ]
         },
         {
-          "title": "Insert rank 3",
+          "title": "insert rank 3",
           "clips": [
             {
               "label": "Original",
@@ -749,7 +739,7 @@
           ]
         },
         {
-          "title": "Replace rank 1",
+          "title": "replace rank 1",
           "clips": [
             {
               "label": "Original",
@@ -768,7 +758,7 @@
           ]
         },
         {
-          "title": "Replace rank 2",
+          "title": "replace rank 2",
           "clips": [
             {
               "label": "Original",
@@ -787,7 +777,7 @@
           ]
         },
         {
-          "title": "Replace rank 3",
+          "title": "replace rank 3",
           "clips": [
             {
               "label": "Original",
@@ -811,7 +801,7 @@
       "title": "Emotion Editing",
       "examples": [
         {
-          "title": "Rank 1",
+          "title": "rank 1",
           "clips": [
             {
               "label": "Original",
@@ -830,7 +820,7 @@
           ]
         },
         {
-          "title": "Rank 2",
+          "title": "rank 2",
           "clips": [
             {
               "label": "Original",
@@ -849,7 +839,7 @@
           ]
         },
         {
-          "title": "Rank 3",
+          "title": "rank 3",
           "clips": [
             {
               "label": "Original",
@@ -868,7 +858,7 @@
           ]
         },
         {
-          "title": "Rank 4",
+          "title": "rank 4",
           "clips": [
             {
               "label": "Original",
@@ -887,7 +877,7 @@
           ]
         },
         {
-          "title": "Rank 5",
+          "title": "rank 5",
           "clips": [
             {
               "label": "Original",
@@ -906,7 +896,7 @@
           ]
         },
         {
-          "title": "Rank 6",
+          "title": "rank 6",
           "clips": [
             {
               "label": "Original",
@@ -925,7 +915,7 @@
           ]
         },
         {
-          "title": "Rank 7",
+          "title": "rank 7",
           "clips": [
             {
               "label": "Original",
@@ -944,7 +934,7 @@
           ]
         },
         {
-          "title": "Rank 8",
+          "title": "rank 8",
           "clips": [
             {
               "label": "Original",
@@ -963,7 +953,7 @@
           ]
         },
         {
-          "title": "Rank 9",
+          "title": "rank 9",
           "clips": [
             {
               "label": "Original",
@@ -987,7 +977,7 @@
       "title": "Paralinguistic Editing",
       "examples": [
         {
-          "title": "Add rank 1",
+          "title": "add rank 1",
           "clips": [
             {
               "label": "Original",
@@ -1006,7 +996,7 @@
           ]
         },
         {
-          "title": "Add rank 2",
+          "title": "add rank 2",
           "clips": [
             {
               "label": "Original",
@@ -1025,7 +1015,7 @@
           ]
         },
         {
-          "title": "Add rank 3",
+          "title": "add rank 3",
           "clips": [
             {
               "label": "Original",
@@ -1044,7 +1034,7 @@
           ]
         },
         {
-          "title": "Add rank 4",
+          "title": "add rank 4",
           "clips": [
             {
               "label": "Original",
@@ -1063,7 +1053,7 @@
           ]
         },
         {
-          "title": "Add rank 5",
+          "title": "add rank 5",
           "clips": [
             {
               "label": "Original",
@@ -1082,7 +1072,7 @@
           ]
         },
         {
-          "title": "Add rank 6",
+          "title": "add rank 6",
           "clips": [
             {
               "label": "Original",
@@ -1101,7 +1091,7 @@
           ]
         },
         {
-          "title": "Remove rank 1",
+          "title": "remove rank 1",
           "clips": [
             {
               "label": "Original",
@@ -1120,7 +1110,7 @@
           ]
         },
         {
-          "title": "Remove rank 2",
+          "title": "remove rank 2",
           "clips": [
             {
               "label": "Original",
@@ -1139,7 +1129,7 @@
           ]
         },
         {
-          "title": "Remove rank 3",
+          "title": "remove rank 3",
           "clips": [
             {
               "label": "Original",
@@ -1163,7 +1153,7 @@
       "title": "Prosody Editing",
       "examples": [
         {
-          "title": "Pitch rank 1",
+          "title": "pitch rank 1",
           "clips": [
             {
               "label": "Original",
@@ -1182,7 +1172,7 @@
           ]
         },
         {
-          "title": "Pitch rank 2",
+          "title": "pitch rank 2",
           "clips": [
             {
               "label": "Original",
@@ -1201,7 +1191,7 @@
           ]
         },
         {
-          "title": "Pitch rank 3",
+          "title": "pitch rank 3",
           "clips": [
             {
               "label": "Original",
@@ -1220,7 +1210,7 @@
           ]
         },
         {
-          "title": "Speed rank 1",
+          "title": "speed rank 1",
           "clips": [
             {
               "label": "Original",
@@ -1239,7 +1229,7 @@
           ]
         },
         {
-          "title": "Speed rank 2",
+          "title": "speed rank 2",
           "clips": [
             {
               "label": "Original",
@@ -1258,7 +1248,7 @@
           ]
         },
         {
-          "title": "Speed rank 3",
+          "title": "speed rank 3",
           "clips": [
             {
               "label": "Original",
@@ -1277,7 +1267,7 @@
           ]
         },
         {
-          "title": "Stress rank 1",
+          "title": "stress rank 1",
           "clips": [
             {
               "label": "Original",
@@ -1296,7 +1286,7 @@
           ]
         },
         {
-          "title": "Stress rank 2",
+          "title": "stress rank 2",
           "clips": [
             {
               "label": "Original",
@@ -1315,7 +1305,7 @@
           ]
         },
         {
-          "title": "Stress rank 3",
+          "title": "stress rank 3",
           "clips": [
             {
               "label": "Original",
@@ -1515,7 +1505,7 @@
       "title": "Binaural Rendering",
       "examples": [
         {
-          "title": "Rank 1",
+          "title": "rank 1",
           "clips": [
             {
               "label": "Original",
@@ -1534,7 +1524,7 @@
           ]
         },
         {
-          "title": "Rank 2",
+          "title": "rank 2",
           "clips": [
             {
               "label": "Original",
@@ -1553,7 +1543,7 @@
           ]
         },
         {
-          "title": "Rank 3",
+          "title": "rank 3",
           "clips": [
             {
               "label": "Original",
@@ -1572,7 +1562,7 @@
           ]
         },
         {
-          "title": "Rank 4",
+          "title": "rank 4",
           "clips": [
             {
               "label": "Original",
@@ -1591,7 +1581,7 @@
           ]
         },
         {
-          "title": "Rank 5",
+          "title": "rank 5",
           "clips": [
             {
               "label": "Original",
@@ -1610,7 +1600,7 @@
           ]
         },
         {
-          "title": "Rank 6",
+          "title": "rank 6",
           "clips": [
             {
               "label": "Original",
@@ -1629,7 +1619,7 @@
           ]
         },
         {
-          "title": "Rank 7",
+          "title": "rank 7",
           "clips": [
             {
               "label": "Original",
@@ -1648,7 +1638,7 @@
           ]
         },
         {
-          "title": "Rank 8",
+          "title": "rank 8",
           "clips": [
             {
               "label": "Original",
@@ -1667,7 +1657,7 @@
           ]
         },
         {
-          "title": "Rank 9",
+          "title": "rank 9",
           "clips": [
             {
               "label": "Original",
