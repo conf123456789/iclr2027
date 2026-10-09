@@ -1,4 +1,5 @@
 :root {
+  color-scheme: dark;
   --bg: #0f1412;
   --bg-soft: #171e1b;
   --ink: #e8efe9;
@@ -39,6 +40,29 @@ code {
   color: var(--accent);
 }
 
+::selection {
+  background: rgba(95, 208, 165, 0.32);
+  color: var(--ink);
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
 .atmosphere {
   position: fixed;
   inset: 0;
@@ -47,12 +71,14 @@ code {
     radial-gradient(ellipse 80% 50% at 15% -10%, rgba(95, 208, 165, 0.18), transparent 55%),
     radial-gradient(ellipse 60% 40% at 90% 10%, rgba(90, 140, 180, 0.12), transparent 50%),
     linear-gradient(180deg, #121916 0%, var(--bg) 45%, #0c100e 100%);
-  animation: drift 18s ease-in-out infinite alternate;
+  animation: drift 26s ease-in-out infinite alternate;
 }
 
+/* opacity 是合成器层动画；原来对整屏 fixed 元素做 hue-rotate
+   属于绘制级滤镜，在 180 个播放器的长页面上会持续触发重绘。*/
 @keyframes drift {
-  from { filter: hue-rotate(0deg); }
-  to { filter: hue-rotate(12deg); }
+  from { opacity: 0.78; }
+  to { opacity: 1; }
 }
 
 .hero {
@@ -143,9 +169,18 @@ code {
 }
 
 .jump {
+  position: sticky;
+  top: 0;
+  z-index: 20;
   display: flex;
+  flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 1.75rem;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0.85rem 1.5rem;
+  background: rgba(15, 20, 18, 0.86);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
 }
 
 .cta {
@@ -158,18 +193,19 @@ code {
 .btn {
   display: inline-block;
   padding: 0.6rem 1.15rem;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--line);
   border-radius: 999px;
-  background: var(--accent-dim);
+  background: rgba(255, 255, 255, 0.03);
   color: var(--ink);
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
-  transition: background 0.2s, transform 0.2s;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
 }
 
 .btn:hover {
-  background: rgba(95, 208, 165, 0.3);
+  border-color: var(--muted);
+  background: rgba(255, 255, 255, 0.07);
   transform: translateY(-1px);
 }
 
@@ -187,15 +223,15 @@ code {
   font-size: 0.92rem;
   font-weight: 500;
   padding: 0.55rem 1rem;
-  border: 1px solid var(--line);
+  border: 1px solid var(--accent);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--accent-dim);
   transition: border-color 0.2s, background 0.2s, transform 0.2s;
 }
 
 .jump a:hover {
   border-color: var(--accent);
-  background: var(--accent-dim);
+  background: rgba(95, 208, 165, 0.3);
   transform: translateY(-1px);
 }
 
@@ -237,11 +273,29 @@ main {
 }
 
 .example {
+  position: relative;
   padding: 1.15rem 1.2rem 1.25rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: linear-gradient(160deg, rgba(255, 255, 255, 0.04), transparent 55%);
   transition: border-color 0.25s, transform 0.25s;
+}
+
+.example::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 1rem;
+  bottom: 1rem;
+  width: 2px;
+  border-radius: 2px;
+  background: var(--accent);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.example:hover::before {
+  opacity: 1;
 }
 
 .example:hover {
@@ -354,10 +408,22 @@ main {
 }
 
 .demo-group > h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   margin: 0 0 0.35rem;
   font-family: var(--font-display);
   font-size: 1.2rem;
   font-weight: 650;
+}
+
+.demo-group > h3::before {
+  content: "";
+  flex: none;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 2px;
+  background: var(--accent);
 }
 
 .demo-group > .note {
@@ -399,4 +465,18 @@ main {
   margin: 0;
   padding-top: 1.5rem;
   border-top: 1px solid var(--line);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }
