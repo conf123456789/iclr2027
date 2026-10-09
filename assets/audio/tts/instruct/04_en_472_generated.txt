@@ -1,0 +1,11 @@
+[instruction]  (DSD style description)
+Embrace the vibrant tone of a young adult, letting your accent reflect the crispness of contemporary British English, with an immediate air of urgency that gradually evolves into a soothing and supportive voice.
+
+[text]  (what is said)
+What crisis? Look at you. You're a ledge, right? You've just had a massive one, that's all.
+
+[spatial instruction]  (mode=move)
+Set the voice in motion across the space: it starts well to the listener's right and glides steadily to the left, sweeping across the front at a constant height and a constant distance.
+
+[spatial params]
+mode=move   from=(az=330°, el=0°, dist=1.5 m)  to=(az=30°, el=0°, dist=1.5 m)  [shortest arc, through the front]

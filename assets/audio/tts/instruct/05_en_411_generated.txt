@@ -1,0 +1,11 @@
+[instruction]  (DSD style description)
+Infuse your speech with a natural conversational pace and decisive personality, allowing the bright vocal texture to accentuate your confidence and consistency. This approach will capture the essence of assertiveness, hidden in your unwavering clarity.
+
+[text]  (what is said)
+Okay, I feel pretty good about going back to Seth and saying that this is Boston.
+
+[spatial instruction]  (mode=move)
+Set the voice in motion across the space: it starts fully to the listener's left and travels steadily across the front to the far right, passing directly in front of the listener at the midpoint while keeping a constant height and distance.
+
+[spatial params]
+mode=move   from=(az=90°, el=0°, dist=1.5 m)  to=(az=270°, el=0°, dist=1.5 m)  [shortest arc, through the front]

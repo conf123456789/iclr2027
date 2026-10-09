@@ -1,0 +1,11 @@
+[instruction]  (DSD style description)
+With a slightly gravelly yet resonant tone, articulate with a brisk and rhythmic cadence; employ subtle Southern inflections to accent key phrases with enthusiasm.
+
+[text]  (what is said)
+So you want people to get an excited look at it. Baby B and Amy Lee, I don't know about you, but my phone keeps ringing off the hook. Everybody wants to see Amy Lee and baby Billy come back for one more tour and. Youtube talking. Taylor. Patrick didn't want.
+
+[spatial instruction]  (mode=orbit)
+Set the voice moving in a continuous circle around the listener: it starts directly in front, revolves steadily to the left, and completes one full revolution at ear level and at a constant distance.
+
+[spatial params]
+mode=orbit  az0=0°  el=0°  dist=1.5 m  deg_per_s=24.5  direction=ccw  sweep=360° (full revolution)

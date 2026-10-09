@@ -1,0 +1,11 @@
+[instruction]  (DSD style description)
+Begin with a lively and resonant British accent that conveys clear and distinct articulation, transitioning from a welcoming tone to a brief scolding interlude before shifting into an amused yet explanatory demeanor.
+
+[text]  (what is said)
+Come here. Let me show you. Stop picking your nose. You see that little black mark there? That's a high, that is.
+
+[spatial instruction]  (mode=static)
+Keep the voice fixed in space throughout: it stays off to the front-left of the listener at ear level and at a close, conversational distance, holding that position without any drift.
+
+[spatial params]
+mode=static  az=45°  el=0°  dist=1.0 m

@@ -1,0 +1,11 @@
+[instruction]  (DSD style description)
+Embrace a loud and forceful delivery that borders on shouting, with a raspy texture given the intensity. Keep the speech rapid and hurried, reflecting a middle-aged male's assertive nature, while conveying a tone of deep frustration.
+
+[text]  (what is said)
+All right. Well, look, the funny thing, The only reason I even remember it is because it's so unlike you. You were the toughest son of a bitch. I am a new.
+
+[spatial instruction]  (mode=orbit)
+Set the voice moving rapidly in a continuous circle around the listener: it starts in front, elevated above ear level, revolves steadily to the left, and completes one full revolution at a constant, close distance.
+
+[spatial params]
+mode=orbit  az0=0°  el=30°  dist=1.0 m  deg_per_s=39.5  direction=ccw  sweep=360° (full revolution)

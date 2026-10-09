@@ -1,0 +1,11 @@
+[instruction]  (DSD style description)
+Produce a confident and assured vocal presence befitting that of a middle-aged to elderly adult, carrying forth an opinionated demeanor in a tone that conveys neutrality with a touch of assertion.
+
+[text]  (what is said)
+And that's the thing about Hindus. They walk from right to left, no matter what direction you want them to go in the first place. And that's the reason they can't, for the life of them, establish any kind of internal infrastructure. Does that answer your question?
+
+[spatial instruction]  (mode=static)
+Keep the voice fixed in space throughout: it stays off to the front-right of the listener at ear level and at a somewhat greater distance, holding that position without any drift.
+
+[spatial params]
+mode=static  az=315°  el=0°  dist=2.0 m

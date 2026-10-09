@@ -1,0 +1,11 @@
+[instruction]  (DSD style description)
+Deliver with an extroverted and expressive personality, maintaining a standard American accent. Embrace a knowing dramatic flair when discussing 'spectacular session', embodying a tone that's both suggestively entertaining and confidently theatrical.
+
+[text]  (what is said)
+I was pleased. Come on. You picked this bike. You could have a front row seat to this little peep show. Oh, oh my God. That night of our spectacular session, you had just come from the gym. Well, I wonder what got your engine. So, Reb, ah, the truth is out there and.
+
+[spatial instruction]  (mode=move)
+Set the voice in motion through the space: it begins in front of the listener, high up and far away, then gradually descends and closes the distance, ending close by and directly ahead at ear level.
+
+[spatial params]
+mode=move   from=(az=0°, el=30°, dist=3.0 m)  to=(az=0°, el=0°, dist=0.6 m)

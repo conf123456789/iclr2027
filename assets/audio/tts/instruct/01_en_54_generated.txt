@@ -1,0 +1,11 @@
+[instruction]  (DSD style description)
+Maintain an announcing tone while integrating a touch of humor as you conclude. Let the voice texture remain gravelly, preserving its slightly husky quality throughout. The emotional arc should move from high excitement to sustained enthusiasm, reflecting a truly extroverted and energetic male voice.
+
+[text]  (what is said)
+Thank you. It is a whole new series featuring many things. We go to Las Vegas, Italy, Monte Carlo, Albania, Loughborough.
+
+[spatial instruction]  (mode=static)
+Keep the voice anchored in space for the whole utterance: it stays directly in front of the listener at ear level, about an arm's length away, and never drifts left, right, or in distance.
+
+[spatial params]
+mode=static  az=0°  el=0°  dist=1.5 m

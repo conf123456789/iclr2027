@@ -1,0 +1,11 @@
+[instruction]  (DSD style description)
+Ensure a smooth and continuous rhythm that reflects the natural flow of casual conversation, with a playful assertiveness, employing a Standard American English accent to maintain linguistic clarity.
+
+[text]  (what is said)
+It was fantastic. I mean, you know, your mother did start out with her usual little remarks, but I just let it roll right off of me. I laughed. I joked. I didn't.
+
+[spatial instruction]  (mode=orbit)
+Set the voice moving around the listener: it begins fully to the left and sweeps clockwise past the front to the far right, staying slightly above ear level and at a constant distance as it travels.
+
+[spatial params]
+mode=orbit  az0=90°  el=10°  dist=2.0 m  deg_per_s=16.1  direction=cw  sweep=180° (half revolution)
