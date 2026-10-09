@@ -1,0 +1,10 @@
+edit_type      : emotion
+target_emotion : frustrated
+instruction    : Change the emotion to frustrated.
+source_emotion : angry
+judge_pred     : frustrated  (gemini-3-flash via StepFun proxy -- matches target)
+
+# `instruction` is what the model was given, along with prompt.wav.
+# `source_emotion`/`target_emotion` are SpeechEditBench evaluator labels
+# (anchor.source_emotion / anchor.target_emotion), not model inputs.
+# `judge_pred` is the LLM judge's verdict on generated.wav.
