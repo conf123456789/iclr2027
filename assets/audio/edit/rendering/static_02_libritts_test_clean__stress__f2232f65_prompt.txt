@@ -1,0 +1,1 @@
+Change the spatial state of the speech to the back-left, 15° below the horizon, very close, about 0.4 m away.

@@ -1,0 +1,1 @@
+Change the spatial state of the speech to the front-left, 50° above the horizon, about 1.7 m away.

@@ -1,0 +1,1 @@
+Change the spatial state of the speech so the sound starts from the front, 17° below the horizon, close, about 1.2 m away and ends at the front, 24° below the horizon, far out, about 3.1 m away, holding still for the first ~21% and the last ~19% of the clip.

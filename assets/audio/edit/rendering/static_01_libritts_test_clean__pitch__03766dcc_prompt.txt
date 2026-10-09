@@ -1,0 +1,1 @@
+Change the spatial state of the speech to 48° to the left of directly behind, 45° above the horizon, far out, about 4.5 m away.

@@ -1,0 +1,1 @@
+Change the spatial state of the speech so the sound circles around the listener at 8° below the horizon, far out, about 3.1 m away, starting from the back-right and going toward the listener's left first, covering 0.9 revolution(s) over the clip.
