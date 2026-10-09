@@ -1,0 +1,11 @@
+edit_type    : prosody
+prosody_type : pitch
+direction    : higher
+instruction  : Raise the pitch.
+measure      : shift +3.70 semitone (f0 99.4Hz -> 123.1Hz; threshold 0.3)
+content      : wer 0.000 (threshold 0.1)
+
+# `instruction` is what the model was given, along with prompt.wav.
+# `prosody_type`/`direction`/`stress_words` are SpeechEditBench evaluator labels
+# (anchor.*), not model inputs.
+# `measure`/`content` are the evaluator's verdict on generated.wav.
