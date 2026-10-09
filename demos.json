@@ -1,6 +1,6 @@
 {
   "title": "SpiderAudio",
-  "description": "Replace this text with a one-sentence summary of your method. Keep the page anonymous for double-blind review.",
+  "description": "Unified continuous representations for binaural spatial speech understanding, generation, and editing.",
   "recon": [
     {
       "title": "1580_141084_000043_000003_orbit · orbit",
@@ -21,6 +21,10 @@
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/1580_141084_000043_000003_orbit.wav"
+        },
+        {
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/1580_141084_000043_000003_orbit.wav"
         }
       ]
     },
@@ -43,6 +47,10 @@
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/237_134500_000022_000001_move.wav"
+        },
+        {
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/237_134500_000022_000001_move.wav"
         }
       ]
     },
@@ -65,6 +73,10 @@
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/260_123286_000045_000001_orbit.wav"
+        },
+        {
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/260_123286_000045_000001_orbit.wav"
         }
       ]
     },
@@ -87,6 +99,10 @@
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/2830_3979_000025_000000_orbit.wav"
+        },
+        {
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/2830_3979_000025_000000_orbit.wav"
         }
       ]
     },
@@ -109,6 +125,10 @@
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/3570_5694_000014_000007_move.wav"
+        },
+        {
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/3570_5694_000014_000007_move.wav"
         }
       ]
     },
@@ -131,6 +151,10 @@
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/4970_29093_000044_000002_static.wav"
+        },
+        {
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/4970_29093_000044_000002_static.wav"
         }
       ]
     },
@@ -153,6 +177,10 @@
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/4992_23283_000039_000003_static.wav"
+        },
+        {
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/4992_23283_000039_000003_static.wav"
         }
       ]
     },
@@ -175,6 +203,10 @@
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/8455_210777_000005_000004_move.wav"
+        },
+        {
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/8455_210777_000005_000004_move.wav"
         }
       ]
     },
@@ -197,44 +229,366 @@
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/8463_294828_000040_000001_static.wav"
+        },
+        {
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/8463_294828_000040_000001_static.wav"
         }
       ]
     }
   ],
   "audio": [
     {
-      "title": "Example 1",
-      "note": "Target text: Kaufman Lake is also a popular full day hiking destination.",
-      "clips": [
+      "title": "Zero-shot",
+      "note": "The model receives a short reference clip — the source voice and its starting position — plus a target text, and must synthesise the binaural target.",
+      "examples": [
         {
-          "label": "Reference wave",
-          "src": "assets/audio/tts/zero-shot/static/01_common_voice_en_20303932-common_voice_en_20303930_prompt.wav"
+          "title": "static · rank 1",
+          "note": "Target text: Kaufman Lake is also a popular full day hiking destination.",
+          "clips": [
+            {
+              "label": "Reference wave",
+              "src": "assets/audio/tts/zero-shot/static/01_common_voice_en_20303932-common_voice_en_20303930_prompt.wav"
+            },
+            {
+              "label": "Ground truth",
+              "src": "assets/audio/tts/zero-shot/static/01_common_voice_en_20303932-common_voice_en_20303930_target.wav"
+            },
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/zero-shot/static/01_common_voice_en_20303932-common_voice_en_20303930_generated.wav"
+            }
+          ]
         },
         {
-          "label": "Input",
-          "src": "assets/audio/ex1_input.wav"
+          "title": "static · rank 2",
+          "note": "Target text: The airport is also the home to the National Weather Service Pocatello Office.",
+          "clips": [
+            {
+              "label": "Reference wave",
+              "src": "assets/audio/tts/zero-shot/static/02_common_voice_en_19767978-common_voice_en_19767980_prompt.wav"
+            },
+            {
+              "label": "Ground truth",
+              "src": "assets/audio/tts/zero-shot/static/02_common_voice_en_19767978-common_voice_en_19767980_target.wav"
+            },
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/zero-shot/static/02_common_voice_en_19767978-common_voice_en_19767980_generated.wav"
+            }
+          ]
         },
         {
-          "label": "Baseline",
-          "src": "assets/audio/ex1_baseline.wav"
+          "title": "static · rank 3",
+          "note": "Target text: Producer Arlene Sherman has called Bert \"everyone's idea of a blind date\".",
+          "clips": [
+            {
+              "label": "Reference wave",
+              "src": "assets/audio/tts/zero-shot/static/03_common_voice_en_21869715-common_voice_en_21869718_prompt.wav"
+            },
+            {
+              "label": "Ground truth",
+              "src": "assets/audio/tts/zero-shot/static/03_common_voice_en_21869715-common_voice_en_21869718_target.wav"
+            },
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/zero-shot/static/03_common_voice_en_21869715-common_voice_en_21869718_generated.wav"
+            }
+          ]
         },
         {
-          "label": "Ours",
-          "src": "assets/audio/ex1_ours.wav"
+          "title": "move · rank 1",
+          "note": "Target text: Winter afternoons are cool and frequently sunny, but mornings are freezing to frigid.",
+          "clips": [
+            {
+              "label": "Reference wave",
+              "src": "assets/audio/tts/zero-shot/move/01_common_voice_en_19665909-common_voice_en_19665911_prompt.wav"
+            },
+            {
+              "label": "Ground truth",
+              "src": "assets/audio/tts/zero-shot/move/01_common_voice_en_19665909-common_voice_en_19665911_target.wav"
+            },
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/zero-shot/move/01_common_voice_en_19665909-common_voice_en_19665911_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "move · rank 2",
+          "note": "Target text: Today, the old observatory is no longer used for research.",
+          "clips": [
+            {
+              "label": "Reference wave",
+              "src": "assets/audio/tts/zero-shot/move/02_common_voice_en_37237245-common_voice_en_37237247_prompt.wav"
+            },
+            {
+              "label": "Ground truth",
+              "src": "assets/audio/tts/zero-shot/move/02_common_voice_en_37237245-common_voice_en_37237247_target.wav"
+            },
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/zero-shot/move/02_common_voice_en_37237245-common_voice_en_37237247_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "move · rank 3",
+          "note": "Target text: Some large firms or specialized jobs require a master's degree.",
+          "clips": [
+            {
+              "label": "Reference wave",
+              "src": "assets/audio/tts/zero-shot/move/03_common_voice_en_23728823-common_voice_en_23728827_prompt.wav"
+            },
+            {
+              "label": "Ground truth",
+              "src": "assets/audio/tts/zero-shot/move/03_common_voice_en_23728823-common_voice_en_23728827_target.wav"
+            },
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/zero-shot/move/03_common_voice_en_23728823-common_voice_en_23728827_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit · rank 1",
+          "note": "Target text: Starring an older and young Bugs Bunny and Elmer Fudd.",
+          "clips": [
+            {
+              "label": "Reference wave",
+              "src": "assets/audio/tts/zero-shot/orbit/01_common_voice_en_20289354-common_voice_en_20289353_prompt.wav"
+            },
+            {
+              "label": "Ground truth",
+              "src": "assets/audio/tts/zero-shot/orbit/01_common_voice_en_20289354-common_voice_en_20289353_target.wav"
+            },
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/zero-shot/orbit/01_common_voice_en_20289354-common_voice_en_20289353_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit · rank 2",
+          "note": "Target text: Davies started planning a second series for \"Dark Season\" that followed a similar structure.",
+          "clips": [
+            {
+              "label": "Reference wave",
+              "src": "assets/audio/tts/zero-shot/orbit/02_common_voice_en_18770703-common_voice_en_18770702_prompt.wav"
+            },
+            {
+              "label": "Ground truth",
+              "src": "assets/audio/tts/zero-shot/orbit/02_common_voice_en_18770703-common_voice_en_18770702_target.wav"
+            },
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/zero-shot/orbit/02_common_voice_en_18770703-common_voice_en_18770702_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit · rank 3",
+          "note": "Target text: Byron was traditionally a rural area of dairy and vegetable farms.",
+          "clips": [
+            {
+              "label": "Reference wave",
+              "src": "assets/audio/tts/zero-shot/orbit/03_common_voice_en_20303932-common_voice_en_20303934_prompt.wav"
+            },
+            {
+              "label": "Ground truth",
+              "src": "assets/audio/tts/zero-shot/orbit/03_common_voice_en_20303932-common_voice_en_20303934_target.wav"
+            },
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/zero-shot/orbit/03_common_voice_en_20303932-common_voice_en_20303934_generated.wav"
+            }
+          ]
         }
       ]
     },
     {
-      "title": "Example 2",
-      "note": "Another qualitative example.",
-      "clips": [
+      "title": "Instruct",
+      "note": "No reference audio: the model is driven by a text description of the target style, the utterance to speak, and an explicit spatial instruction.",
+      "examples": [
         {
-          "label": "Input",
-          "src": "assets/audio/ex2_input.wav"
+          "title": "01 · static",
+          "note": "Text: Thank you. It is a whole new series featuring many things. We go to Las Vegas, Italy, Monte Carlo, Albania, Loughborough.",
+          "details": [
+            {
+              "label": "Style",
+              "text": "Maintain an announcing tone while integrating a touch of humor as you conclude. Let the voice texture remain gravelly, preserving its slightly husky quality throughout. The emotional arc should move from high excitement to sustained enthusiasm, reflecting a truly extroverted and energetic male voice."
+            },
+            {
+              "label": "Spatial",
+              "text": "Keep the voice anchored in space for the whole utterance: it stays directly in front of the listener at ear level, about an arm's length away, and never drifts left, right, or in distance."
+            }
+          ],
+          "clips": [
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/instruct/01_en_54_generated_binaural.wav"
+            }
+          ]
         },
         {
-          "label": "Ours",
-          "src": "assets/audio/ex2_ours.wav"
+          "title": "02 · static",
+          "note": "Text: Come here. Let me show you. Stop picking your nose. You see that little black mark there? That's a high, that is.",
+          "details": [
+            {
+              "label": "Style",
+              "text": "Begin with a lively and resonant British accent that conveys clear and distinct articulation, transitioning from a welcoming tone to a brief scolding interlude before shifting into an amused yet explanatory demeanor."
+            },
+            {
+              "label": "Spatial",
+              "text": "Keep the voice fixed in space throughout: it stays off to the front-left of the listener at ear level and at a close, conversational distance, holding that position without any drift."
+            }
+          ],
+          "clips": [
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/instruct/02_en_220_generated_binaural.wav"
+            }
+          ]
+        },
+        {
+          "title": "03 · static",
+          "note": "Text: And that's the thing about Hindus. They walk from right to left, no matter what direction you want them to go in the first place. And that's the reason they can't, for the life of them, establish any kind of internal infrastructure. Does that answer your question?",
+          "details": [
+            {
+              "label": "Style",
+              "text": "Produce a confident and assured vocal presence befitting that of a middle-aged to elderly adult, carrying forth an opinionated demeanor in a tone that conveys neutrality with a touch of assertion."
+            },
+            {
+              "label": "Spatial",
+              "text": "Keep the voice fixed in space throughout: it stays off to the front-right of the listener at ear level and at a somewhat greater distance, holding that position without any drift."
+            }
+          ],
+          "clips": [
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/instruct/03_en_109_generated_binaural.wav"
+            }
+          ]
+        },
+        {
+          "title": "04 · move",
+          "note": "Text: What crisis? Look at you. You're a ledge, right? You've just had a massive one, that's all.",
+          "details": [
+            {
+              "label": "Style",
+              "text": "Embrace the vibrant tone of a young adult, letting your accent reflect the crispness of contemporary British English, with an immediate air of urgency that gradually evolves into a soothing and supportive voice."
+            },
+            {
+              "label": "Spatial",
+              "text": "Set the voice in motion across the space: it starts well to the listener's right and glides steadily to the left, sweeping across the front at a constant height and a constant distance."
+            }
+          ],
+          "clips": [
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/instruct/04_en_472_generated_binaural.wav"
+            }
+          ]
+        },
+        {
+          "title": "05 · move",
+          "note": "Text: Okay, I feel pretty good about going back to Seth and saying that this is Boston.",
+          "details": [
+            {
+              "label": "Style",
+              "text": "Infuse your speech with a natural conversational pace and decisive personality, allowing the bright vocal texture to accentuate your confidence and consistency. This approach will capture the essence of assertiveness, hidden in your unwavering clarity."
+            },
+            {
+              "label": "Spatial",
+              "text": "Set the voice in motion across the space: it starts fully to the listener's left and travels steadily across the front to the far right, passing directly in front of the listener at the midpoint while keeping a constant height and distance."
+            }
+          ],
+          "clips": [
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/instruct/05_en_411_generated_binaural.wav"
+            }
+          ]
+        },
+        {
+          "title": "06 · move",
+          "note": "Text: I was pleased. Come on. You picked this bike. You could have a front row seat to this little peep show. Oh, oh my God. That night of our spectacular session, you had just come from the gym. Well, I wonder what got your engine. So, Reb, ah, the truth is out there and.",
+          "details": [
+            {
+              "label": "Style",
+              "text": "Deliver with an extroverted and expressive personality, maintaining a standard American accent. Embrace a knowing dramatic flair when discussing 'spectacular session', embodying a tone that's both suggestively entertaining and confidently theatrical."
+            },
+            {
+              "label": "Spatial",
+              "text": "Set the voice in motion through the space: it begins in front of the listener, high up and far away, then gradually descends and closes the distance, ending close by and directly ahead at ear level."
+            }
+          ],
+          "clips": [
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/instruct/06_en_908_generated_binaural.wav"
+            }
+          ]
+        },
+        {
+          "title": "07 · orbit",
+          "note": "Text: So you want people to get an excited look at it. Baby B and Amy Lee, I don't know about you, but my phone keeps ringing off the hook. Everybody wants to see Amy Lee and baby Billy come back for one more tour and. Youtube talking. Taylor. Patrick didn't want.",
+          "details": [
+            {
+              "label": "Style",
+              "text": "With a slightly gravelly yet resonant tone, articulate with a brisk and rhythmic cadence; employ subtle Southern inflections to accent key phrases with enthusiasm."
+            },
+            {
+              "label": "Spatial",
+              "text": "Set the voice moving in a continuous circle around the listener: it starts directly in front, revolves steadily to the left, and completes one full revolution at ear level and at a constant distance."
+            }
+          ],
+          "clips": [
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/instruct/07_en_937_generated_binaural.wav"
+            }
+          ]
+        },
+        {
+          "title": "08 · orbit",
+          "note": "Text: It was fantastic. I mean, you know, your mother did start out with her usual little remarks, but I just let it roll right off of me. I laughed. I joked. I didn't.",
+          "details": [
+            {
+              "label": "Style",
+              "text": "Ensure a smooth and continuous rhythm that reflects the natural flow of casual conversation, with a playful assertiveness, employing a Standard American English accent to maintain linguistic clarity."
+            },
+            {
+              "label": "Spatial",
+              "text": "Set the voice moving around the listener: it begins fully to the left and sweeps clockwise past the front to the far right, staying slightly above ear level and at a constant distance as it travels."
+            }
+          ],
+          "clips": [
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/instruct/08_en_948_generated_binaural.wav"
+            }
+          ]
+        },
+        {
+          "title": "09 · orbit",
+          "note": "Text: All right. Well, look, the funny thing, The only reason I even remember it is because it's so unlike you. You were the toughest son of a bitch. I am a new.",
+          "details": [
+            {
+              "label": "Style",
+              "text": "Embrace a loud and forceful delivery that borders on shouting, with a raspy texture given the intensity. Keep the speech rapid and hurried, reflecting a middle-aged male's assertive nature, while conveying a tone of deep frustration."
+            },
+            {
+              "label": "Spatial",
+              "text": "Set the voice moving rapidly in a continuous circle around the listener: it starts in front, elevated above ear level, revolves steadily to the left, and completes one full revolution at a constant, close distance."
+            }
+          ],
+          "clips": [
+            {
+              "label": "SpiderAudio",
+              "src": "assets/audio/tts/instruct/09_en_951_generated_binaural.wav"
+            }
+          ]
         }
       ]
     }
@@ -247,6 +601,794 @@
     {
       "caption": "Qualitative comparison — replace with assets/images/compare.png",
       "src": "assets/images/compare.png"
+    }
+  ],
+  "edit": [
+    {
+      "title": "Content",
+      "examples": [
+        {
+          "title": "move_06_libritts_test_clean__1089__134691__1089_134691_000008_000003__delete__v1_1_3cfaaf0214",
+          "note": "Delete \"shallow\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/content/move_06_libritts_test_clean__1089__134691__1089_134691_000008_000003__delete__v1_1_3cfaaf0214_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/content/move_06_libritts_test_clean__1089__134691__1089_134691_000008_000003__delete__v1_1_3cfaaf0214_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "move_07_libritts_test_clean__1089__134691__1089_134691_000027_000002__insert__v1_1_2a8e7d8ac5",
+          "note": "Insert \"of the evening\" after \"air\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/content/move_07_libritts_test_clean__1089__134691__1089_134691_000027_000002__insert__v1_1_2a8e7d8ac5_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/content/move_07_libritts_test_clean__1089__134691__1089_134691_000027_000002__insert__v1_1_2a8e7d8ac5_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "move_09_libritts_test_clean__1089__134686__1089_134686_000032_000006__insert__v1_1_e1d563eddd",
+          "note": "Insert \"in the region\" after \"idolaters\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/content/move_09_libritts_test_clean__1089__134686__1089_134686_000032_000006__insert__v1_1_e1d563eddd_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/content/move_09_libritts_test_clean__1089__134686__1089_134686_000032_000006__insert__v1_1_e1d563eddd_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_03_libritts_test_clean__1089__134686__1089_134686_000023_000000__replace__v1_1_26ad7856e3",
+          "note": "Replace \"arid\" with \"dry\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/content/orbit_03_libritts_test_clean__1089__134686__1089_134686_000023_000000__replace__v1_1_26ad7856e3_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/content/orbit_03_libritts_test_clean__1089__134686__1089_134686_000023_000000__replace__v1_1_26ad7856e3_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_04_libritts_test_clean__1089__134686__1089_134686_000002_000003__delete__v1_1_aaf2c49c3b",
+          "note": "Delete \"soft\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/content/orbit_04_libritts_test_clean__1089__134686__1089_134686_000002_000003__delete__v1_1_aaf2c49c3b_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/content/orbit_04_libritts_test_clean__1089__134686__1089_134686_000002_000003__delete__v1_1_aaf2c49c3b_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_08_libritts_test_clean__1089__134691__1089_134691_000027_000003__insert__v1_1_cf4f2389c4",
+          "note": "Insert \"once ruled\" after \"kingdom\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/content/orbit_08_libritts_test_clean__1089__134691__1089_134691_000027_000003__insert__v1_1_cf4f2389c4_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/content/orbit_08_libritts_test_clean__1089__134691__1089_134691_000027_000003__insert__v1_1_cf4f2389c4_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_01_libritts_test_clean__1089__134691__1089_134691_000004_000002__replace__v1_1_4eeaae4c6c",
+          "note": "Replace \"antagonism\" with \"conflict\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/content/static_01_libritts_test_clean__1089__134691__1089_134691_000004_000002__replace__v1_1_4eeaae4c6c_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/content/static_01_libritts_test_clean__1089__134691__1089_134691_000004_000002__replace__v1_1_4eeaae4c6c_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_02_libritts_test_clean__1089__134691__1089_134691_000005_000005__replace__v1_1_c0a55a5454",
+          "note": "Replace \"pattering\" with \"drumming\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/content/static_02_libritts_test_clean__1089__134691__1089_134691_000005_000005__replace__v1_1_c0a55a5454_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/content/static_02_libritts_test_clean__1089__134691__1089_134691_000005_000005__replace__v1_1_c0a55a5454_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_05_libritts_test_clean__1089__134691__1089_134691_000010_000000__delete__v1_1_1876a1831e",
+          "note": "Delete \"elaborate\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/content/static_05_libritts_test_clean__1089__134691__1089_134691_000010_000000__delete__v1_1_1876a1831e_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/content/static_05_libritts_test_clean__1089__134691__1089_134691_000010_000000__delete__v1_1_1876a1831e_generated.wav"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Emotion",
+      "examples": [
+        {
+          "title": "move_04_iemocap__surprise__female__c16be6b467ed",
+          "note": "Change the emotion to fearful.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/move_04_iemocap__surprise__female__c16be6b467ed_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/move_04_iemocap__surprise__female__c16be6b467ed_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "move_07_iemocap__neutral__female__398b90edc338",
+          "note": "Change the emotion to happy.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/move_07_iemocap__neutral__female__398b90edc338_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/move_07_iemocap__neutral__female__398b90edc338_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "move_09_iemocap__excited__female__b091c32447ac",
+          "note": "Change the emotion to surprise.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/move_09_iemocap__excited__female__b091c32447ac_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/move_09_iemocap__excited__female__b091c32447ac_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_01_iemocap__fearful__male__f8db948bcf79",
+          "note": "Change the emotion to angry.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/orbit_01_iemocap__fearful__male__f8db948bcf79_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/orbit_01_iemocap__fearful__male__f8db948bcf79_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_06_iemocap__angry__female__03415749a3c9",
+          "note": "Change the emotion to frustrated.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/orbit_06_iemocap__angry__female__03415749a3c9_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/orbit_06_iemocap__angry__female__03415749a3c9_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_08_iemocap__frustrated__female__0319855e9920",
+          "note": "Change the emotion to sad.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/orbit_08_iemocap__frustrated__female__0319855e9920_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/orbit_08_iemocap__frustrated__female__0319855e9920_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_02_libritts_test_clean__neutral__2300__n_bcefc09bccaa",
+          "note": "Change the emotion to excited.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/static_02_libritts_test_clean__neutral__2300__n_bcefc09bccaa_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/static_02_libritts_test_clean__neutral__2300__n_bcefc09bccaa_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_03_libritts_test_clean__neutral__121__n_81bce1ef13a1",
+          "note": "Change the emotion to excited.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/static_03_libritts_test_clean__neutral__121__n_81bce1ef13a1_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/static_03_libritts_test_clean__neutral__121__n_81bce1ef13a1_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_05_iemocap__angry__female__889fd10f6d12",
+          "note": "Change the emotion to frustrated.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/static_05_iemocap__angry__female__889fd10f6d12_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/static_05_iemocap__angry__female__889fd10f6d12_generated.wav"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Paralinguistic",
+      "examples": [
+        {
+          "title": "move_01_libritts_test_clean__1089__134691__1089_134691_000008_000001__add_breath",
+          "note": "Add audible breathing sounds to the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/move_01_libritts_test_clean__1089__134691__1089_134691_000008_000001__add_breath_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/move_01_libritts_test_clean__1089__134691__1089_134691_000008_000001__add_breath_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "move_02_libritts_test_clean__121__127105__121_127105_000043_000007__add_breath",
+          "note": "Add audible breathing sounds to the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/move_02_libritts_test_clean__121__127105__121_127105_000043_000007__add_breath_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/move_02_libritts_test_clean__121__127105__121_127105_000043_000007__add_breath_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "move_06_disfluencyspeech_en__train__0000942__remove_cough",
+          "note": "Remove audible coughing sounds from the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/move_06_disfluencyspeech_en__train__0000942__remove_cough_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/move_06_disfluencyspeech_en__train__0000942__remove_cough_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_03_libritts_test_clean__121__127105__121_127105_000042_000001__add_laugh",
+          "note": "Add audible laughter to the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/orbit_03_libritts_test_clean__121__127105__121_127105_000042_000001__add_laugh_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/orbit_03_libritts_test_clean__121__127105__121_127105_000042_000001__add_laugh_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_04_libritts_test_clean__121__121726__121_121726_000004_000003__add_laugh",
+          "note": "Add audible laughter to the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/orbit_04_libritts_test_clean__121__121726__121_121726_000004_000003__add_laugh_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/orbit_04_libritts_test_clean__121__121726__121_121726_000004_000003__add_laugh_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_09_nonverbaltts_en__train__0000105__remove_sigh",
+          "note": "Remove audible sighing sounds from the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/orbit_09_nonverbaltts_en__train__0000105__remove_sigh_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/orbit_09_nonverbaltts_en__train__0000105__remove_sigh_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_05_libritts_test_clean__1089__134691__1089_134691_000054_000000__add_cough",
+          "note": "Add audible coughing sounds to the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/static_05_libritts_test_clean__1089__134691__1089_134691_000054_000000__add_cough_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/static_05_libritts_test_clean__1089__134691__1089_134691_000054_000000__add_cough_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_07_disfluencyspeech_en__train__0000282__remove_sigh",
+          "note": "Remove audible sighing sounds from the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/static_07_disfluencyspeech_en__train__0000282__remove_sigh_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/static_07_disfluencyspeech_en__train__0000282__remove_sigh_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_08_libritts_test_clean__1089__134691__1089_134691_000013_000003__add_sigh",
+          "note": "Add audible sighing sounds to the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/static_08_libritts_test_clean__1089__134691__1089_134691_000013_000003__add_sigh_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/static_08_libritts_test_clean__1089__134691__1089_134691_000013_000003__add_sigh_generated.wav"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Prosody",
+      "examples": [
+        {
+          "title": "move_01_libritts_test_clean__speed__54f12e5f",
+          "note": "Speak faster.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/prosody/move_01_libritts_test_clean__speed__54f12e5f_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/prosody/move_01_libritts_test_clean__speed__54f12e5f_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "move_03_libritts_test_clean__speed__7a26ac4b",
+          "note": "Speak slower.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/prosody/move_03_libritts_test_clean__speed__7a26ac4b_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/prosody/move_03_libritts_test_clean__speed__7a26ac4b_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "move_06_libritts_test_clean__pitch__5d5d71c8",
+          "note": "Raise the pitch.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/prosody/move_06_libritts_test_clean__pitch__5d5d71c8_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/prosody/move_06_libritts_test_clean__pitch__5d5d71c8_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_05_libritts_test_clean__pitch__b2bd7467",
+          "note": "Lower the pitch.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/prosody/orbit_05_libritts_test_clean__pitch__b2bd7467_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/prosody/orbit_05_libritts_test_clean__pitch__b2bd7467_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_07_libritts_test_clean__stress__429550bc",
+          "note": "Emphasize the word \"birds\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/prosody/orbit_07_libritts_test_clean__stress__429550bc_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/prosody/orbit_07_libritts_test_clean__stress__429550bc_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_09_libritts_test_clean__stress__42363c89",
+          "note": "Emphasize the word \"success\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/prosody/orbit_09_libritts_test_clean__stress__42363c89_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/prosody/orbit_09_libritts_test_clean__stress__42363c89_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_02_libritts_test_clean__speed__c4a1ef8b",
+          "note": "Speak faster.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/prosody/static_02_libritts_test_clean__speed__c4a1ef8b_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/prosody/static_02_libritts_test_clean__speed__c4a1ef8b_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_04_libritts_test_clean__pitch__f6eaf3c5",
+          "note": "Raise the pitch.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/prosody/static_04_libritts_test_clean__pitch__f6eaf3c5_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/prosody/static_04_libritts_test_clean__pitch__f6eaf3c5_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_08_libritts_test_clean__stress__32ba80f7",
+          "note": "Emphasize the word \"magic\".",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/prosody/static_08_libritts_test_clean__stress__32ba80f7_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/prosody/static_08_libritts_test_clean__stress__32ba80f7_generated.wav"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rendering",
+      "examples": [
+        {
+          "title": "move_01_libritts_test_clean__stress__dc9ce579",
+          "note": "Change the spatial state of the speech so the sound starts from the front-right, 13° above the horizon, close, about 0.9 m away and ends at the front-left, 28° below the horizon, about 2.6 m away, holding still for the first ~23% and the last ~18% of the clip.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/move_01_libritts_test_clean__stress__dc9ce579_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/move_01_libritts_test_clean__stress__dc9ce579_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "move_02_libritts_test_clean__stress__7f963ab9",
+          "note": "Change the spatial state of the speech so the sound starts from the front, 17° below the horizon, close, about 1.2 m away and ends at the front, 24° below the horizon, far out, about 3.1 m away, holding still for the first ~21% and the last ~19% of the clip.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/move_02_libritts_test_clean__stress__7f963ab9_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/move_02_libritts_test_clean__stress__7f963ab9_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "move_03_libritts_test_clean__stress__6421bf42",
+          "note": "Change the spatial state of the speech so the sound starts from the front, 58° above the horizon, about 2.8 m away and ends at the right, level with the listener, far out, about 4.6 m away, holding still for the first ~14% and the last ~23% of the clip.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/move_03_libritts_test_clean__stress__6421bf42_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/move_03_libritts_test_clean__stress__6421bf42_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_01_libritts_test_clean__pitch__5e227c0c",
+          "note": "Change the spatial state of the speech so the sound circles around the listener at 10° above the horizon, far out, about 3.3 m away, starting from directly to the left and going toward the listener's right first, covering 1.8 revolution(s) over the clip.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/orbit_01_libritts_test_clean__pitch__5e227c0c_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/orbit_01_libritts_test_clean__pitch__5e227c0c_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_02_libritts_test_clean__stress__e019ac1f",
+          "note": "Change the spatial state of the speech so the sound circles around the listener at 47° above the horizon, about 2.9 m away, starting from 33° to the right of directly behind and going toward the listener's left first, covering 1.0 revolution(s) over the clip.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/orbit_02_libritts_test_clean__stress__e019ac1f_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/orbit_02_libritts_test_clean__stress__e019ac1f_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_03_libritts_test_clean__pitch__1422e9d5",
+          "note": "Change the spatial state of the speech so the sound circles around the listener at 8° below the horizon, far out, about 3.1 m away, starting from the back-right and going toward the listener's left first, covering 0.9 revolution(s) over the clip.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/orbit_03_libritts_test_clean__pitch__1422e9d5_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/orbit_03_libritts_test_clean__pitch__1422e9d5_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_01_libritts_test_clean__pitch__03766dcc",
+          "note": "Change the spatial state of the speech to 48° to the left of directly behind, 45° above the horizon, far out, about 4.5 m away.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/static_01_libritts_test_clean__pitch__03766dcc_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/static_01_libritts_test_clean__pitch__03766dcc_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_02_libritts_test_clean__stress__f2232f65",
+          "note": "Change the spatial state of the speech to the back-left, 15° below the horizon, very close, about 0.4 m away.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/static_02_libritts_test_clean__stress__f2232f65_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/static_02_libritts_test_clean__stress__f2232f65_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_03_libritts_test_clean__speed__7dbae2f1",
+          "note": "Change the spatial state of the speech to the front-left, 50° above the horizon, about 1.7 m away.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/static_03_libritts_test_clean__speed__7dbae2f1_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/static_03_libritts_test_clean__speed__7dbae2f1_generated.wav"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spatial state",
+      "examples": [
+        {
+          "title": "move_to_move_07_libritts_test_clean__1089__134691__1089_134691_000024_000001",
+          "note": "",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/spatial_state/move_to_move_07_libritts_test_clean__1089__134691__1089_134691_000024_000001_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/spatial_state/move_to_move_07_libritts_test_clean__1089__134691__1089_134691_000024_000001_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "move_to_orbit_02_libritts_test_clean__1089__134686__1089_134686_000024_000001",
+          "note": "",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/spatial_state/move_to_orbit_02_libritts_test_clean__1089__134686__1089_134686_000024_000001_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/spatial_state/move_to_orbit_02_libritts_test_clean__1089__134686__1089_134686_000024_000001_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "move_to_static_05_libritts_test_clean__1089__134691__1089_134691_000008_000003",
+          "note": "",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/spatial_state/move_to_static_05_libritts_test_clean__1089__134691__1089_134691_000008_000003_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/spatial_state/move_to_static_05_libritts_test_clean__1089__134691__1089_134691_000008_000003_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_to_move_09_libritts_test_clean__1089__134691__1089_134691_000025_000003",
+          "note": "",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/spatial_state/orbit_to_move_09_libritts_test_clean__1089__134691__1089_134691_000025_000003_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/spatial_state/orbit_to_move_09_libritts_test_clean__1089__134691__1089_134691_000025_000003_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_to_orbit_06_libritts_test_clean__1089__134691__1089_134691_000016_000001",
+          "note": "",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/spatial_state/orbit_to_orbit_06_libritts_test_clean__1089__134691__1089_134691_000016_000001_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/spatial_state/orbit_to_orbit_06_libritts_test_clean__1089__134691__1089_134691_000016_000001_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "orbit_to_static_01_libritts_test_clean__1089__134686__1089_134686_000009_000000",
+          "note": "",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/spatial_state/orbit_to_static_01_libritts_test_clean__1089__134686__1089_134686_000009_000000_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/spatial_state/orbit_to_static_01_libritts_test_clean__1089__134686__1089_134686_000009_000000_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_to_move_04_libritts_test_clean__1089__134691__1089_134691_000008_000001",
+          "note": "",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/spatial_state/static_to_move_04_libritts_test_clean__1089__134691__1089_134691_000008_000001_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/spatial_state/static_to_move_04_libritts_test_clean__1089__134691__1089_134691_000008_000001_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_to_orbit_08_libritts_test_clean__1089__134691__1089_134691_000024_000003",
+          "note": "",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/spatial_state/static_to_orbit_08_libritts_test_clean__1089__134691__1089_134691_000024_000003_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/spatial_state/static_to_orbit_08_libritts_test_clean__1089__134691__1089_134691_000024_000003_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "static_to_static_03_libritts_test_clean__1089__134686__1089_134686_000028_000002",
+          "note": "",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/spatial_state/static_to_static_03_libritts_test_clean__1089__134686__1089_134686_000028_000002_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/spatial_state/static_to_static_03_libritts_test_clean__1089__134686__1089_134686_000028_000002_generated.wav"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
