@@ -137,7 +137,8 @@ async function main() {
     if (editRoot) {
       renderGroups(editRoot, data.edit, "No editing examples yet. Edit demos.json and add files under assets/audio/edit/.");
     }
-    renderImages(document.getElementById("image-root"), data.images);
+    const imageRoot = document.getElementById("image-root");
+    if (imageRoot) renderImages(imageRoot, data.images);
   } catch (err) {
     document.getElementById("audio-root").appendChild(
       el("p", "empty", "Could not load demos.json. Check the file is in the repo root.")
