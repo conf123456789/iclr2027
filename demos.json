@@ -1,6 +1,6 @@
 {
   "title": "SpiderAudio",
-  "description": "Unified continuous representations for binaural spatial speech understanding, generation, and editing.",
+  "description": "Unified Binaural Representation for Joint Spatial Speech Understanding, Generation and Editing.",
   "recon": [
     {
       "title": "static · rank 1",
