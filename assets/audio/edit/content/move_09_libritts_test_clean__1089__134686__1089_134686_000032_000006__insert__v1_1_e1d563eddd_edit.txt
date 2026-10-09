@@ -1,0 +1,8 @@
+edit_type   : insert
+instruction : Insert "in the region" after "idolaters".
+original    : He is said to have baptized as many as ten thousand idolaters in one month.
+target      : He is said to have baptized as many as ten thousand idolaters in the region in one month.
+
+# `instruction` is what the model was given, along with prompt.wav.
+# `original`/`target` are SpeechEditBench evaluator labels
+# (anchor.transcript_original / anchor.transcript_target), not model inputs.

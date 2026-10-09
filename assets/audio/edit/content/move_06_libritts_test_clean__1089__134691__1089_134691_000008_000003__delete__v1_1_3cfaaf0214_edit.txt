@@ -1,0 +1,8 @@
+edit_type   : delete
+instruction : Delete "shallow".
+original    : Angry with himself he tried to hide his face from their eyes by gazing down sideways into the shallow swirling water under the bridge but he still saw a reflection therein of their top heavy silk hats and humble tape like collars and loosely hanging clerical clothes.
+target      : Angry with himself he tried to hide his face from their eyes by gazing down sideways into the swirling water under the bridge but he still saw a reflection therein of their top heavy silk hats and humble tape like collars and loosely hanging clerical clothes.
+
+# `instruction` is what the model was given, along with prompt.wav.
+# `original`/`target` are SpeechEditBench evaluator labels
+# (anchor.transcript_original / anchor.transcript_target), not model inputs.

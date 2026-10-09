@@ -1,0 +1,8 @@
+edit_type   : delete
+instruction : Delete "elaborate".
+original    : Their piety would be like their names, like their faces, like their clothes, and it was idle for him to tell himself that their humble and contrite hearts, it might be, paid a far richer tribute of devotion than his had ever been, a gift tenfold more acceptable than his elaborate adoration.
+target      : Their piety would be like their names, like their faces, like their clothes, and it was idle for him to tell himself that their humble and contrite hearts, it might be, paid a far richer tribute of devotion than his had ever been, a gift tenfold more acceptable than his adoration.
+
+# `instruction` is what the model was given, along with prompt.wav.
+# `original`/`target` are SpeechEditBench evaluator labels
+# (anchor.transcript_original / anchor.transcript_target), not model inputs.

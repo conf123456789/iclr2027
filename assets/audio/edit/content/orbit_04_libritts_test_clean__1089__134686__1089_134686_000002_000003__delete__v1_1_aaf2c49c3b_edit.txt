@@ -1,0 +1,8 @@
+edit_type   : delete
+instruction : Delete "soft".
+original    : The whores would be just coming out of their houses making ready for the night, yawning lazily after their sleep and settling the hairpins in their clusters of hair. He would pass by them calmly waiting for a sudden movement of his own will or a sudden call to his sin loving soul from their soft perfumed flesh.
+target      : The whores would be just coming out of their houses making ready for the night, yawning lazily after their sleep and settling the hairpins in their clusters of hair. He would pass by them calmly waiting for a sudden movement of his own will or a sudden call to his sin loving soul from their perfumed flesh.
+
+# `instruction` is what the model was given, along with prompt.wav.
+# `original`/`target` are SpeechEditBench evaluator labels
+# (anchor.transcript_original / anchor.transcript_target), not model inputs.

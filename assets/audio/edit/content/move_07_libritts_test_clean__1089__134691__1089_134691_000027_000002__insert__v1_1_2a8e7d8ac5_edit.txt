@@ -1,0 +1,8 @@
+edit_type   : insert
+instruction : Insert "of the evening" after "air".
+original    : So timeless seemed the grey warm air, so fluid and impersonal his own mood, that all ages were as one to him.
+target      : So timeless seemed the grey warm air of the evening, so fluid and impersonal his own mood, that all ages were as one to him.
+
+# `instruction` is what the model was given, along with prompt.wav.
+# `original`/`target` are SpeechEditBench evaluator labels
+# (anchor.transcript_original / anchor.transcript_target), not model inputs.

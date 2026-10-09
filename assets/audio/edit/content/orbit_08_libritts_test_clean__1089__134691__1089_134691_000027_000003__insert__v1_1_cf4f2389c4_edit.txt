@@ -1,0 +1,8 @@
+edit_type   : insert
+instruction : Insert "once ruled" after "kingdom".
+original    : A moment before the ghost of the ancient kingdom of the Danes had looked forth through the vesture of the hazewrapped City.
+target      : A moment before the ghost of the ancient kingdom once ruled by the Danes had looked forth through the vesture of the hazewrapped City.
+
+# `instruction` is what the model was given, along with prompt.wav.
+# `original`/`target` are SpeechEditBench evaluator labels
+# (anchor.transcript_original / anchor.transcript_target), not model inputs.

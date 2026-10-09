@@ -1,0 +1,8 @@
+edit_type   : replace
+instruction : Replace "pattering" with "drumming".
+original    : It was an elfin prelude, endless and formless; and, as it grew wilder and faster, the flames leaping out of time, he seemed to hear from under the boughs and grasses wild creatures racing, their feet pattering like rain upon the leaves.
+target      : It was an elfin prelude, endless and formless; and, as it grew wilder and faster, the flames leaping out of time, he seemed to hear from under the boughs and grasses wild creatures racing, their feet drumming like rain upon the leaves.
+
+# `instruction` is what the model was given, along with prompt.wav.
+# `original`/`target` are SpeechEditBench evaluator labels
+# (anchor.transcript_original / anchor.transcript_target), not model inputs.

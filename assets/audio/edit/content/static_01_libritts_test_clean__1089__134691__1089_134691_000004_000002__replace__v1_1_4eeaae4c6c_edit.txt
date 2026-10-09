@@ -1,0 +1,8 @@
+edit_type   : replace
+instruction : Replace "antagonism" with "conflict".
+original    : A dim antagonism gathered force within him and darkened his mind as a cloud against her disloyalty and when it passed, cloud like, leaving his mind serene and dutiful towards her again, he was made aware dimly and without regret of a first noiseless sundering of their lives.
+target      : A dim conflict gathered force within him and darkened his mind as a cloud against her disloyalty and when it passed, cloud like, leaving his mind serene and dutiful towards her again, he was made aware dimly and without regret of a first noiseless sundering of their lives.
+
+# `instruction` is what the model was given, along with prompt.wav.
+# `original`/`target` are SpeechEditBench evaluator labels
+# (anchor.transcript_original / anchor.transcript_target), not model inputs.
