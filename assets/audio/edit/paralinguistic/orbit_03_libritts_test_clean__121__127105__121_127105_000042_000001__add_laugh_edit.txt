@@ -1,0 +1,10 @@
+edit_type    : paralinguistic
+operation    : add
+event        : laugh
+instruction  : Add audible laughter to the speech.
+judge        : laugh scored 2 (add passes at >=2) -- pass
+judge_scores : breath 1, laugh 2, cough 0, sigh 0
+
+# `instruction` is what the model was given, along with prompt.wav.
+# `operation`/`event` are SpeechEditBench evaluator labels (anchor.*), not model
+# inputs. `judge`/`judge_scores` are the LLM judge's verdict on generated.wav.

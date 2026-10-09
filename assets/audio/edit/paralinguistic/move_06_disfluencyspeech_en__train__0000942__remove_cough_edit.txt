@@ -1,0 +1,10 @@
+edit_type    : paralinguistic
+operation    : remove
+event        : cough
+instruction  : Remove audible coughing sounds from the speech.
+judge        : cough scored 0 (remove passes at <=1) -- pass
+judge_scores : breath 2, laugh 0, cough 0, sigh 0
+
+# `instruction` is what the model was given, along with prompt.wav.
+# `operation`/`event` are SpeechEditBench evaluator labels (anchor.*), not model
+# inputs. `judge`/`judge_scores` are the LLM judge's verdict on generated.wav.
