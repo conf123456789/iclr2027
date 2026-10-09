@@ -1,0 +1,14 @@
+from_state     : static
+to_state       : static
+spatial_source : The sound comes from the back-right, 9° above the horizon, about 2.9 m
+                 away.
+spatial_target : Change the spatial state of the speech to the front, 22° below the
+                 horizon, about 2.7 m away.
+prompt         : static  (az=233.954, el=9.362, dist=2.917)
+generated      : static  (az=351.166, el=-21.611, dist=2.725)
+
+# prompt.wav    = this clip rendered in the FROM state
+# generated.wav = the same clip rendered in the TO state
+# `spatial_source` describes prompt.wav; `spatial_target` is the TO state phrased
+# as an edit instruction (what a spatial-editing task would ask for).
+# Same audio content, two spatial states -- the pair is the state transition.

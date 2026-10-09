@@ -1,0 +1,18 @@
+from_state     : move
+to_state       : orbit
+spatial_source : The sound starts from the left, 25° above the horizon, far out, about
+                 3.1 m away, and ends at the right, 56° above the horizon, close, about
+                 0.6 m away, holding still for the first ~14% and the last ~11% of the
+                 clip.
+spatial_target : Change the spatial state of the speech so the sound circles around the
+                 listener at 34° below the horizon, far out, about 4.2 m away, starting
+                 from the front-right and going toward the listener's right first,
+                 covering 0.6 revolution(s) over the clip.
+prompt         : move  (az0=96.165, el0=25.339, d0=3.129, el1=55.54, d1=0.643, daz=178.245, h0=0.139, h1=0.114)
+generated      : orbit  (el=-34.268, dist=4.193, az0=329.678, revs=0.62, direction=-1.0)
+
+# prompt.wav    = this clip rendered in the FROM state
+# generated.wav = the same clip rendered in the TO state
+# `spatial_source` describes prompt.wav; `spatial_target` is the TO state phrased
+# as an edit instruction (what a spatial-editing task would ask for).
+# Same audio content, two spatial states -- the pair is the state transition.

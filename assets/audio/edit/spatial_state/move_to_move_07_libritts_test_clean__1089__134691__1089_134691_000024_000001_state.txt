@@ -1,0 +1,17 @@
+from_state     : move
+to_state       : move
+spatial_source : The sound starts from the back, 37° below the horizon, about 2.6 m
+                 away, and ends at the right, 34° below the horizon, about 1.8 m away,
+                 holding still for the first ~19% and the last ~13% of the clip.
+spatial_target : Change the spatial state of the speech so the sound starts from the
+                 back-left, 34° above the horizon, close, about 0.6 m away and ends at
+                 the front-right, 22° below the horizon, far out, about 4.5 m away,
+                 holding still for the first ~12% and the last ~13% of the clip.
+prompt         : move  (az0=167.796, el0=-36.861, d0=2.579, el1=-33.708, d1=1.838, daz=98.572, h0=0.19, h1=0.127)
+generated      : move  (az0=150.281, el0=34.318, d0=0.636, el1=-21.768, d1=4.459, daz=-175.601, h0=0.118, h1=0.133)
+
+# prompt.wav    = this clip rendered in the FROM state
+# generated.wav = the same clip rendered in the TO state
+# `spatial_source` describes prompt.wav; `spatial_target` is the TO state phrased
+# as an edit instruction (what a spatial-editing task would ask for).
+# Same audio content, two spatial states -- the pair is the state transition.
