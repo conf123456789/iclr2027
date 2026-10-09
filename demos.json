@@ -641,7 +641,7 @@
   ],
   "edit": [
     {
-      "title": "Content",
+      "title": "Content Editing",
       "examples": [
         {
           "title": "Delete rank 1",
@@ -772,24 +772,10 @@
       ]
     },
     {
-      "title": "Emotion",
+      "title": "Emotion Editing",
       "examples": [
         {
-          "title": "Emotion: angry rank 1",
-          "note": "Change the emotion to angry.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/emotion/orbit_01_iemocap__fearful__male__f8db948bcf79_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/emotion/orbit_01_iemocap__fearful__male__f8db948bcf79_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Emotion: excited rank 1",
+          "title": "Rank 1",
           "note": "Change the emotion to excited.",
           "clips": [
             {
@@ -803,7 +789,7 @@
           ]
         },
         {
-          "title": "Emotion: excited rank 2",
+          "title": "Rank 2",
           "note": "Change the emotion to excited.",
           "clips": [
             {
@@ -817,35 +803,7 @@
           ]
         },
         {
-          "title": "Emotion: fearful rank 1",
-          "note": "Change the emotion to fearful.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/emotion/move_04_iemocap__surprise__female__c16be6b467ed_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/emotion/move_04_iemocap__surprise__female__c16be6b467ed_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Emotion: frustrated rank 1",
-          "note": "Change the emotion to frustrated.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/emotion/orbit_06_iemocap__angry__female__03415749a3c9_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/emotion/orbit_06_iemocap__angry__female__03415749a3c9_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Emotion: frustrated rank 2",
+          "title": "Rank 3",
           "note": "Change the emotion to frustrated.",
           "clips": [
             {
@@ -859,7 +817,21 @@
           ]
         },
         {
-          "title": "Emotion: happy rank 1",
+          "title": "Rank 4",
+          "note": "Change the emotion to fearful.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/move_04_iemocap__surprise__female__c16be6b467ed_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/move_04_iemocap__surprise__female__c16be6b467ed_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Rank 5",
           "note": "Change the emotion to happy.",
           "clips": [
             {
@@ -873,21 +845,7 @@
           ]
         },
         {
-          "title": "Emotion: sad rank 1",
-          "note": "Change the emotion to sad.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/emotion/orbit_08_iemocap__frustrated__female__0319855e9920_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/emotion/orbit_08_iemocap__frustrated__female__0319855e9920_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Emotion: surprise rank 1",
+          "title": "Rank 6",
           "note": "Change the emotion to surprise.",
           "clips": [
             {
@@ -899,42 +857,56 @@
               "src": "assets/audio/edit/emotion/move_09_iemocap__excited__female__b091c32447ac_generated.wav"
             }
           ]
+        },
+        {
+          "title": "Rank 7",
+          "note": "Change the emotion to angry.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/orbit_01_iemocap__fearful__male__f8db948bcf79_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/orbit_01_iemocap__fearful__male__f8db948bcf79_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Rank 8",
+          "note": "Change the emotion to frustrated.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/orbit_06_iemocap__angry__female__03415749a3c9_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/orbit_06_iemocap__angry__female__03415749a3c9_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Rank 9",
+          "note": "Change the emotion to sad.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/emotion/orbit_08_iemocap__frustrated__female__0319855e9920_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/emotion/orbit_08_iemocap__frustrated__female__0319855e9920_generated.wav"
+            }
+          ]
         }
       ]
     },
     {
-      "title": "Paralinguistic",
+      "title": "Paralinguistic Editing",
       "examples": [
         {
-          "title": "Add breath rank 1",
-          "note": "Add audible breathing sounds to the speech.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/paralinguistic/move_01_libritts_test_clean__1089__134691__1089_134691_000008_000001__add_breath_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/paralinguistic/move_01_libritts_test_clean__1089__134691__1089_134691_000008_000001__add_breath_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Add breath rank 2",
-          "note": "Add audible breathing sounds to the speech.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/paralinguistic/move_02_libritts_test_clean__121__127105__121_127105_000043_000007__add_breath_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/paralinguistic/move_02_libritts_test_clean__121__127105__121_127105_000043_000007__add_breath_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Add cough rank 1",
+          "title": "Add rank 1",
           "note": "Add audible coughing sounds to the speech.",
           "clips": [
             {
@@ -948,35 +920,7 @@
           ]
         },
         {
-          "title": "Add laugh rank 1",
-          "note": "Add audible laughter to the speech.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/paralinguistic/orbit_03_libritts_test_clean__121__127105__121_127105_000042_000001__add_laugh_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/paralinguistic/orbit_03_libritts_test_clean__121__127105__121_127105_000042_000001__add_laugh_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Add laugh rank 2",
-          "note": "Add audible laughter to the speech.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/paralinguistic/orbit_04_libritts_test_clean__121__121726__121_121726_000004_000003__add_laugh_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/paralinguistic/orbit_04_libritts_test_clean__121__121726__121_121726_000004_000003__add_laugh_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Add sigh rank 1",
+          "title": "Add rank 2",
           "note": "Add audible sighing sounds to the speech.",
           "clips": [
             {
@@ -990,7 +934,77 @@
           ]
         },
         {
-          "title": "Remove cough rank 1",
+          "title": "Add rank 3",
+          "note": "Add audible breathing sounds to the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/move_01_libritts_test_clean__1089__134691__1089_134691_000008_000001__add_breath_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/move_01_libritts_test_clean__1089__134691__1089_134691_000008_000001__add_breath_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Add rank 4",
+          "note": "Add audible breathing sounds to the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/move_02_libritts_test_clean__121__127105__121_127105_000043_000007__add_breath_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/move_02_libritts_test_clean__121__127105__121_127105_000043_000007__add_breath_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Add rank 5",
+          "note": "Add audible laughter to the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/orbit_03_libritts_test_clean__121__127105__121_127105_000042_000001__add_laugh_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/orbit_03_libritts_test_clean__121__127105__121_127105_000042_000001__add_laugh_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Add rank 6",
+          "note": "Add audible laughter to the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/orbit_04_libritts_test_clean__121__121726__121_121726_000004_000003__add_laugh_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/orbit_04_libritts_test_clean__121__121726__121_121726_000004_000003__add_laugh_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Remove rank 1",
+          "note": "Remove audible sighing sounds from the speech.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/paralinguistic/static_07_disfluencyspeech_en__train__0000282__remove_sigh_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/paralinguistic/static_07_disfluencyspeech_en__train__0000282__remove_sigh_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Remove rank 2",
           "note": "Remove audible coughing sounds from the speech.",
           "clips": [
             {
@@ -1004,7 +1018,7 @@
           ]
         },
         {
-          "title": "Remove sigh rank 1",
+          "title": "Remove rank 3",
           "note": "Remove audible sighing sounds from the speech.",
           "clips": [
             {
@@ -1016,25 +1030,11 @@
               "src": "assets/audio/edit/paralinguistic/orbit_09_nonverbaltts_en__train__0000105__remove_sigh_generated.wav"
             }
           ]
-        },
-        {
-          "title": "Remove sigh rank 2",
-          "note": "Remove audible sighing sounds from the speech.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/paralinguistic/static_07_disfluencyspeech_en__train__0000282__remove_sigh_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/paralinguistic/static_07_disfluencyspeech_en__train__0000282__remove_sigh_generated.wav"
-            }
-          ]
         }
       ]
     },
     {
-      "title": "Prosody",
+      "title": "Prosody Editing",
       "examples": [
         {
           "title": "Pitch rank 1",
@@ -1165,138 +1165,7 @@
       ]
     },
     {
-      "title": "Rendering",
-      "examples": [
-        {
-          "title": "Rendering (class) rank 1",
-          "note": "Change the spatial state of the speech so the sound starts from the front-right, 13° above the horizon, close, about 0.9 m away and ends at the front-left, 28° below the horizon, about 2.6 m away, holding still for the first ~23% and the last ~18% of the clip.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/rendering/move_01_libritts_test_clean__stress__dc9ce579_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/rendering/move_01_libritts_test_clean__stress__dc9ce579_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Rendering (class) rank 2",
-          "note": "Change the spatial state of the speech so the sound starts from the front, 17° below the horizon, close, about 1.2 m away and ends at the front, 24° below the horizon, far out, about 3.1 m away, holding still for the first ~21% and the last ~19% of the clip.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/rendering/move_02_libritts_test_clean__stress__7f963ab9_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/rendering/move_02_libritts_test_clean__stress__7f963ab9_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Rendering (class) rank 3",
-          "note": "Change the spatial state of the speech so the sound starts from the front, 58° above the horizon, about 2.8 m away and ends at the right, level with the listener, far out, about 4.6 m away, holding still for the first ~14% and the last ~23% of the clip.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/rendering/move_03_libritts_test_clean__stress__6421bf42_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/rendering/move_03_libritts_test_clean__stress__6421bf42_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Rendering (class) rank 4",
-          "note": "Change the spatial state of the speech so the sound circles around the listener at 8° below the horizon, far out, about 3.1 m away, starting from the back-right and going toward the listener's left first, covering 0.9 revolution(s) over the clip.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/rendering/orbit_03_libritts_test_clean__pitch__1422e9d5_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/rendering/orbit_03_libritts_test_clean__pitch__1422e9d5_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Rendering (class) rank 5",
-          "note": "Change the spatial state of the speech to the back-left, 15° below the horizon, very close, about 0.4 m away.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/rendering/static_02_libritts_test_clean__stress__f2232f65_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/rendering/static_02_libritts_test_clean__stress__f2232f65_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Rendering (class) rank 6",
-          "note": "Change the spatial state of the speech to the front-left, 50° above the horizon, about 1.7 m away.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/rendering/static_03_libritts_test_clean__speed__7dbae2f1_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/rendering/static_03_libritts_test_clean__speed__7dbae2f1_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Rendering (precise) rank 1",
-          "note": "Change the spatial state of the speech so the sound circles around the listener at 10° above the horizon, far out, about 3.3 m away, starting from directly to the left and going toward the listener's right first, covering 1.8 revolution(s) over the clip.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/rendering/orbit_01_libritts_test_clean__pitch__5e227c0c_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/rendering/orbit_01_libritts_test_clean__pitch__5e227c0c_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Rendering (precise) rank 2",
-          "note": "Change the spatial state of the speech so the sound circles around the listener at 47° above the horizon, about 2.9 m away, starting from 33° to the right of directly behind and going toward the listener's left first, covering 1.0 revolution(s) over the clip.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/rendering/orbit_02_libritts_test_clean__stress__e019ac1f_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/rendering/orbit_02_libritts_test_clean__stress__e019ac1f_generated.wav"
-            }
-          ]
-        },
-        {
-          "title": "Rendering (precise) rank 3",
-          "note": "Change the spatial state of the speech to 48° to the left of directly behind, 45° above the horizon, far out, about 4.5 m away.",
-          "clips": [
-            {
-              "label": "Original",
-              "src": "assets/audio/edit/rendering/static_01_libritts_test_clean__pitch__03766dcc_prompt.wav"
-            },
-            {
-              "label": "Edited",
-              "src": "assets/audio/edit/rendering/static_01_libritts_test_clean__pitch__03766dcc_generated.wav"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Spatial state",
+      "title": "Spatial State Editing",
       "examples": [
         {
           "title": "move → move rank 1",
@@ -1421,6 +1290,137 @@
             {
               "label": "Edited",
               "src": "assets/audio/edit/spatial_state/static_to_static_03_libritts_test_clean__1089__134686__1089_134686_000028_000002_generated.wav"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Binaural Rendering",
+      "examples": [
+        {
+          "title": "Rank 1",
+          "note": "Change the spatial state of the speech to 48° to the left of directly behind, 45° above the horizon, far out, about 4.5 m away.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/static_01_libritts_test_clean__pitch__03766dcc_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/static_01_libritts_test_clean__pitch__03766dcc_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Rank 2",
+          "note": "Change the spatial state of the speech to the back-left, 15° below the horizon, very close, about 0.4 m away.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/static_02_libritts_test_clean__stress__f2232f65_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/static_02_libritts_test_clean__stress__f2232f65_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Rank 3",
+          "note": "Change the spatial state of the speech to the front-left, 50° above the horizon, about 1.7 m away.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/static_03_libritts_test_clean__speed__7dbae2f1_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/static_03_libritts_test_clean__speed__7dbae2f1_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Rank 4",
+          "note": "Change the spatial state of the speech so the sound starts from the front-right, 13° above the horizon, close, about 0.9 m away and ends at the front-left, 28° below the horizon, about 2.6 m away, holding still for the first ~23% and the last ~18% of the clip.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/move_01_libritts_test_clean__stress__dc9ce579_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/move_01_libritts_test_clean__stress__dc9ce579_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Rank 5",
+          "note": "Change the spatial state of the speech so the sound starts from the front, 17° below the horizon, close, about 1.2 m away and ends at the front, 24° below the horizon, far out, about 3.1 m away, holding still for the first ~21% and the last ~19% of the clip.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/move_02_libritts_test_clean__stress__7f963ab9_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/move_02_libritts_test_clean__stress__7f963ab9_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Rank 6",
+          "note": "Change the spatial state of the speech so the sound starts from the front, 58° above the horizon, about 2.8 m away and ends at the right, level with the listener, far out, about 4.6 m away, holding still for the first ~14% and the last ~23% of the clip.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/move_03_libritts_test_clean__stress__6421bf42_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/move_03_libritts_test_clean__stress__6421bf42_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Rank 7",
+          "note": "Change the spatial state of the speech so the sound circles around the listener at 10° above the horizon, far out, about 3.3 m away, starting from directly to the left and going toward the listener's right first, covering 1.8 revolution(s) over the clip.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/orbit_01_libritts_test_clean__pitch__5e227c0c_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/orbit_01_libritts_test_clean__pitch__5e227c0c_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Rank 8",
+          "note": "Change the spatial state of the speech so the sound circles around the listener at 47° above the horizon, about 2.9 m away, starting from 33° to the right of directly behind and going toward the listener's left first, covering 1.0 revolution(s) over the clip.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/orbit_02_libritts_test_clean__stress__e019ac1f_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/orbit_02_libritts_test_clean__stress__e019ac1f_generated.wav"
+            }
+          ]
+        },
+        {
+          "title": "Rank 9",
+          "note": "Change the spatial state of the speech so the sound circles around the listener at 8° below the horizon, far out, about 3.1 m away, starting from the back-right and going toward the listener's left first, covering 0.9 revolution(s) over the clip.",
+          "clips": [
+            {
+              "label": "Original",
+              "src": "assets/audio/edit/rendering/orbit_03_libritts_test_clean__pitch__1422e9d5_prompt.wav"
+            },
+            {
+              "label": "Edited",
+              "src": "assets/audio/edit/rendering/orbit_03_libritts_test_clean__pitch__1422e9d5_generated.wav"
             }
           ]
         }
