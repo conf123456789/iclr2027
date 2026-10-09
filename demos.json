@@ -244,7 +244,6 @@
       "examples": [
         {
           "title": "static · rank 1",
-          "note": "Target text: Kaufman Lake is also a popular full day hiking destination.",
           "clips": [
             {
               "label": "Reference wave",
@@ -254,11 +253,16 @@
               "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/static/01_common_voice_en_20303932-common_voice_en_20303930_target.wav"
             }
+          ],
+          "details": [
+            {
+              "label": "Text",
+              "text": "Kaufman Lake is also a popular full day hiking destination."
+            }
           ]
         },
         {
           "title": "static · rank 2",
-          "note": "Target text: The airport is also the home to the National Weather Service Pocatello Office.",
           "clips": [
             {
               "label": "Reference wave",
@@ -268,11 +272,16 @@
               "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/static/02_common_voice_en_19767978-common_voice_en_19767980_target.wav"
             }
+          ],
+          "details": [
+            {
+              "label": "Text",
+              "text": "The airport is also the home to the National Weather Service Pocatello Office."
+            }
           ]
         },
         {
           "title": "static · rank 3",
-          "note": "Target text: Producer Arlene Sherman has called Bert \"everyone's idea of a blind date\".",
           "clips": [
             {
               "label": "Reference wave",
@@ -282,11 +291,16 @@
               "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/static/03_common_voice_en_21869715-common_voice_en_21869718_target.wav"
             }
+          ],
+          "details": [
+            {
+              "label": "Text",
+              "text": "Producer Arlene Sherman has called Bert \"everyone's idea of a blind date\"."
+            }
           ]
         },
         {
           "title": "move · rank 1",
-          "note": "Target text: Winter afternoons are cool and frequently sunny, but mornings are freezing to frigid.",
           "clips": [
             {
               "label": "Reference wave",
@@ -296,11 +310,16 @@
               "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/move/01_common_voice_en_19665909-common_voice_en_19665911_target.wav"
             }
+          ],
+          "details": [
+            {
+              "label": "Text",
+              "text": "Winter afternoons are cool and frequently sunny, but mornings are freezing to frigid."
+            }
           ]
         },
         {
           "title": "move · rank 2",
-          "note": "Target text: Today, the old observatory is no longer used for research.",
           "clips": [
             {
               "label": "Reference wave",
@@ -310,11 +329,16 @@
               "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/move/02_common_voice_en_37237245-common_voice_en_37237247_target.wav"
             }
+          ],
+          "details": [
+            {
+              "label": "Text",
+              "text": "Today, the old observatory is no longer used for research."
+            }
           ]
         },
         {
           "title": "move · rank 3",
-          "note": "Target text: Some large firms or specialized jobs require a master's degree.",
           "clips": [
             {
               "label": "Reference wave",
@@ -324,11 +348,16 @@
               "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/move/03_common_voice_en_23728823-common_voice_en_23728827_target.wav"
             }
+          ],
+          "details": [
+            {
+              "label": "Text",
+              "text": "Some large firms or specialized jobs require a master's degree."
+            }
           ]
         },
         {
           "title": "orbit · rank 1",
-          "note": "Target text: Starring an older and young Bugs Bunny and Elmer Fudd.",
           "clips": [
             {
               "label": "Reference wave",
@@ -338,11 +367,16 @@
               "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/orbit/01_common_voice_en_20289354-common_voice_en_20289353_target.wav"
             }
+          ],
+          "details": [
+            {
+              "label": "Text",
+              "text": "Starring an older and young Bugs Bunny and Elmer Fudd."
+            }
           ]
         },
         {
           "title": "orbit · rank 2",
-          "note": "Target text: Davies started planning a second series for \"Dark Season\" that followed a similar structure.",
           "clips": [
             {
               "label": "Reference wave",
@@ -352,11 +386,16 @@
               "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/orbit/02_common_voice_en_18770703-common_voice_en_18770702_target.wav"
             }
+          ],
+          "details": [
+            {
+              "label": "Text",
+              "text": "Davies started planning a second series for \"Dark Season\" that followed a similar structure."
+            }
           ]
         },
         {
           "title": "orbit · rank 3",
-          "note": "Target text: Byron was traditionally a rural area of dairy and vegetable farms.",
           "clips": [
             {
               "label": "Reference wave",
@@ -365,6 +404,12 @@
             {
               "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/orbit/03_common_voice_en_20303932-common_voice_en_20303934_target.wav"
+            }
+          ],
+          "details": [
+            {
+              "label": "Text",
+              "text": "Byron was traditionally a rural area of dairy and vegetable farms."
             }
           ]
         }
@@ -376,8 +421,11 @@
       "examples": [
         {
           "title": "01 · static",
-          "note": "Text: Thank you. It is a whole new series featuring many things. We go to Las Vegas, Italy, Monte Carlo, Albania, Loughborough.",
           "details": [
+            {
+              "label": "Text",
+              "text": "Thank you. It is a whole new series featuring many things. We go to Las Vegas, Italy, Monte Carlo, Albania, Loughborough."
+            },
             {
               "label": "Style",
               "text": "Maintain an announcing tone while integrating a touch of humor as you conclude. Let the voice texture remain gravelly, preserving its slightly husky quality throughout. The emotional arc should move from high excitement to sustained enthusiasm, reflecting a truly extroverted and energetic male voice."
@@ -396,8 +444,11 @@
         },
         {
           "title": "02 · static",
-          "note": "Text: Come here. Let me show you. Stop picking your nose. You see that little black mark there? That's a high, that is.",
           "details": [
+            {
+              "label": "Text",
+              "text": "Come here. Let me show you. Stop picking your nose. You see that little black mark there? That's a high, that is."
+            },
             {
               "label": "Style",
               "text": "Begin with a lively and resonant British accent that conveys clear and distinct articulation, transitioning from a welcoming tone to a brief scolding interlude before shifting into an amused yet explanatory demeanor."
@@ -416,8 +467,11 @@
         },
         {
           "title": "03 · static",
-          "note": "Text: And that's the thing about Hindus. They walk from right to left, no matter what direction you want them to go in the first place. And that's the reason they can't, for the life of them, establish any kind of internal infrastructure. Does that answer your question?",
           "details": [
+            {
+              "label": "Text",
+              "text": "And that's the thing about Hindus. They walk from right to left, no matter what direction you want them to go in the first place. And that's the reason they can't, for the life of them, establish any kind of internal infrastructure. Does that answer your question?"
+            },
             {
               "label": "Style",
               "text": "Produce a confident and assured vocal presence befitting that of a middle-aged to elderly adult, carrying forth an opinionated demeanor in a tone that conveys neutrality with a touch of assertion."
@@ -436,8 +490,11 @@
         },
         {
           "title": "04 · move",
-          "note": "Text: What crisis? Look at you. You're a ledge, right? You've just had a massive one, that's all.",
           "details": [
+            {
+              "label": "Text",
+              "text": "What crisis? Look at you. You're a ledge, right? You've just had a massive one, that's all."
+            },
             {
               "label": "Style",
               "text": "Embrace the vibrant tone of a young adult, letting your accent reflect the crispness of contemporary British English, with an immediate air of urgency that gradually evolves into a soothing and supportive voice."
@@ -456,8 +513,11 @@
         },
         {
           "title": "05 · move",
-          "note": "Text: Okay, I feel pretty good about going back to Seth and saying that this is Boston.",
           "details": [
+            {
+              "label": "Text",
+              "text": "Okay, I feel pretty good about going back to Seth and saying that this is Boston."
+            },
             {
               "label": "Style",
               "text": "Infuse your speech with a natural conversational pace and decisive personality, allowing the bright vocal texture to accentuate your confidence and consistency. This approach will capture the essence of assertiveness, hidden in your unwavering clarity."
@@ -476,8 +536,11 @@
         },
         {
           "title": "06 · move",
-          "note": "Text: I was pleased. Come on. You picked this bike. You could have a front row seat to this little peep show. Oh, oh my God. That night of our spectacular session, you had just come from the gym. Well, I wonder what got your engine. So, Reb, ah, the truth is out there and.",
           "details": [
+            {
+              "label": "Text",
+              "text": "I was pleased. Come on. You picked this bike. You could have a front row seat to this little peep show. Oh, oh my God. That night of our spectacular session, you had just come from the gym. Well, I wonder what got your engine. So, Reb, ah, the truth is out there and."
+            },
             {
               "label": "Style",
               "text": "Deliver with an extroverted and expressive personality, maintaining a standard American accent. Embrace a knowing dramatic flair when discussing 'spectacular session', embodying a tone that's both suggestively entertaining and confidently theatrical."
@@ -496,8 +559,11 @@
         },
         {
           "title": "07 · orbit",
-          "note": "Text: So you want people to get an excited look at it. Baby B and Amy Lee, I don't know about you, but my phone keeps ringing off the hook. Everybody wants to see Amy Lee and baby Billy come back for one more tour and. Youtube talking. Taylor. Patrick didn't want.",
           "details": [
+            {
+              "label": "Text",
+              "text": "So you want people to get an excited look at it. Baby B and Amy Lee, I don't know about you, but my phone keeps ringing off the hook. Everybody wants to see Amy Lee and baby Billy come back for one more tour and. Youtube talking. Taylor. Patrick didn't want."
+            },
             {
               "label": "Style",
               "text": "With a slightly gravelly yet resonant tone, articulate with a brisk and rhythmic cadence; employ subtle Southern inflections to accent key phrases with enthusiasm."
@@ -516,8 +582,11 @@
         },
         {
           "title": "08 · orbit",
-          "note": "Text: It was fantastic. I mean, you know, your mother did start out with her usual little remarks, but I just let it roll right off of me. I laughed. I joked. I didn't.",
           "details": [
+            {
+              "label": "Text",
+              "text": "It was fantastic. I mean, you know, your mother did start out with her usual little remarks, but I just let it roll right off of me. I laughed. I joked. I didn't."
+            },
             {
               "label": "Style",
               "text": "Ensure a smooth and continuous rhythm that reflects the natural flow of casual conversation, with a playful assertiveness, employing a Standard American English accent to maintain linguistic clarity."
@@ -536,8 +605,11 @@
         },
         {
           "title": "09 · orbit",
-          "note": "Text: All right. Well, look, the funny thing, The only reason I even remember it is because it's so unlike you. You were the toughest son of a bitch. I am a new.",
           "details": [
+            {
+              "label": "Text",
+              "text": "All right. Well, look, the funny thing, The only reason I even remember it is because it's so unlike you. You were the toughest son of a bitch. I am a new."
+            },
             {
               "label": "Style",
               "text": "Embrace a loud and forceful delivery that borders on shouting, with a raspy texture given the intensity. Keep the speech rapid and hurried, reflecting a middle-aged male's assertive nature, while conveying a tone of deep frustration."
