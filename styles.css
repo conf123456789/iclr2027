@@ -122,6 +122,10 @@ code {
   margin-top: 1.25rem;
 }
 
+.overview-hero {
+  margin-top: 0;
+}
+
 .overview img {
   display: block;
   width: 100%;
