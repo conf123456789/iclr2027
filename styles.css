@@ -152,6 +152,11 @@ h3 {
   margin-top: 0;
 }
 
+.overview-narrow {
+  width: 80%;
+  margin-inline: auto;
+}
+
 .overview img {
   display: block;
   width: 100%;
@@ -209,12 +214,28 @@ h3 {
   transform: translateY(-1px);
 }
 
+.btn .ico {
+  margin-right: 0.45rem;
+  font-size: 1rem;
+  line-height: 1;
+  vertical-align: -0.05em;
+}
+
 .cta-note {
   margin: 0.85rem 0 0;
   max-width: 38rem;
   color: var(--muted);
   font-size: 0.88rem;
+  font-weight: 700;
   line-height: 1.5;
+}
+
+.guide {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  color: var(--muted);
+  font-size: 0.88rem;
 }
 
 .jump a {
