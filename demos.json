@@ -625,7 +625,7 @@
       "title": "Content Editing",
       "examples": [
         {
-          "title": "delete rank 1",
+          "title": "delete · rank 1",
           "clips": [
             {
               "label": "Original",
@@ -644,7 +644,7 @@
           ]
         },
         {
-          "title": "delete rank 2",
+          "title": "delete · rank 2",
           "clips": [
             {
               "label": "Original",
@@ -663,7 +663,7 @@
           ]
         },
         {
-          "title": "delete rank 3",
+          "title": "delete · rank 3",
           "clips": [
             {
               "label": "Original",
@@ -682,7 +682,7 @@
           ]
         },
         {
-          "title": "insert rank 1",
+          "title": "insert · rank 1",
           "clips": [
             {
               "label": "Original",
@@ -701,7 +701,7 @@
           ]
         },
         {
-          "title": "insert rank 2",
+          "title": "insert · rank 2",
           "clips": [
             {
               "label": "Original",
@@ -720,7 +720,7 @@
           ]
         },
         {
-          "title": "insert rank 3",
+          "title": "insert · rank 3",
           "clips": [
             {
               "label": "Original",
@@ -739,7 +739,7 @@
           ]
         },
         {
-          "title": "replace rank 1",
+          "title": "replace · rank 1",
           "clips": [
             {
               "label": "Original",
@@ -758,7 +758,7 @@
           ]
         },
         {
-          "title": "replace rank 2",
+          "title": "replace · rank 2",
           "clips": [
             {
               "label": "Original",
@@ -777,7 +777,7 @@
           ]
         },
         {
-          "title": "replace rank 3",
+          "title": "replace · rank 3",
           "clips": [
             {
               "label": "Original",
@@ -977,7 +977,7 @@
       "title": "Paralinguistic Editing",
       "examples": [
         {
-          "title": "add rank 1",
+          "title": "add · rank 1",
           "clips": [
             {
               "label": "Original",
@@ -996,7 +996,7 @@
           ]
         },
         {
-          "title": "add rank 2",
+          "title": "add · rank 2",
           "clips": [
             {
               "label": "Original",
@@ -1015,7 +1015,7 @@
           ]
         },
         {
-          "title": "add rank 3",
+          "title": "add · rank 3",
           "clips": [
             {
               "label": "Original",
@@ -1034,7 +1034,7 @@
           ]
         },
         {
-          "title": "add rank 4",
+          "title": "add · rank 4",
           "clips": [
             {
               "label": "Original",
@@ -1053,7 +1053,7 @@
           ]
         },
         {
-          "title": "add rank 5",
+          "title": "add · rank 5",
           "clips": [
             {
               "label": "Original",
@@ -1072,7 +1072,7 @@
           ]
         },
         {
-          "title": "add rank 6",
+          "title": "add · rank 6",
           "clips": [
             {
               "label": "Original",
@@ -1091,7 +1091,7 @@
           ]
         },
         {
-          "title": "remove rank 1",
+          "title": "remove · rank 1",
           "clips": [
             {
               "label": "Original",
@@ -1110,7 +1110,7 @@
           ]
         },
         {
-          "title": "remove rank 2",
+          "title": "remove · rank 2",
           "clips": [
             {
               "label": "Original",
@@ -1129,7 +1129,7 @@
           ]
         },
         {
-          "title": "remove rank 3",
+          "title": "remove · rank 3",
           "clips": [
             {
               "label": "Original",
@@ -1153,7 +1153,7 @@
       "title": "Prosody Editing",
       "examples": [
         {
-          "title": "pitch rank 1",
+          "title": "pitch · rank 1",
           "clips": [
             {
               "label": "Original",
@@ -1172,7 +1172,7 @@
           ]
         },
         {
-          "title": "pitch rank 2",
+          "title": "pitch · rank 2",
           "clips": [
             {
               "label": "Original",
@@ -1191,7 +1191,7 @@
           ]
         },
         {
-          "title": "pitch rank 3",
+          "title": "pitch · rank 3",
           "clips": [
             {
               "label": "Original",
@@ -1210,7 +1210,7 @@
           ]
         },
         {
-          "title": "speed rank 1",
+          "title": "speed · rank 1",
           "clips": [
             {
               "label": "Original",
@@ -1229,7 +1229,7 @@
           ]
         },
         {
-          "title": "speed rank 2",
+          "title": "speed · rank 2",
           "clips": [
             {
               "label": "Original",
@@ -1248,7 +1248,7 @@
           ]
         },
         {
-          "title": "speed rank 3",
+          "title": "speed · rank 3",
           "clips": [
             {
               "label": "Original",
@@ -1267,7 +1267,7 @@
           ]
         },
         {
-          "title": "stress rank 1",
+          "title": "stress · rank 1",
           "clips": [
             {
               "label": "Original",
@@ -1286,7 +1286,7 @@
           ]
         },
         {
-          "title": "stress rank 2",
+          "title": "stress · rank 2",
           "clips": [
             {
               "label": "Original",
@@ -1305,7 +1305,7 @@
           ]
         },
         {
-          "title": "stress rank 3",
+          "title": "stress · rank 3",
           "clips": [
             {
               "label": "Original",
