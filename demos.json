@@ -1,22 +1,241 @@
 {
   "title": "SpiderAudio",
   "description": "Replace this text with a one-sentence summary of your method. Keep the page anonymous for double-blind review.",
+  "recon": [
+    {
+      "title": "1580_141084_000043_000003_orbit · orbit",
+      "note": "Orbiting source — ground truth against each tokenizer's reconstruction.",
+      "clips": [
+        {
+          "label": "Ground truth",
+          "src": "assets/audio/recon/gt/1580_141084_000043_000003_orbit.wav"
+        },
+        {
+          "label": "SpiderTok",
+          "src": "assets/audio/recon/spidertok/1580_141084_000043_000003_orbit.wav"
+        },
+        {
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/1580_141084_000043_000003_orbit.wav"
+        },
+        {
+          "label": "HoliTok",
+          "src": "assets/audio/recon/holitok/1580_141084_000043_000003_orbit.wav"
+        }
+      ]
+    },
+    {
+      "title": "237_134500_000022_000001_move · move",
+      "note": "Moving source — ground truth against each tokenizer's reconstruction.",
+      "clips": [
+        {
+          "label": "Ground truth",
+          "src": "assets/audio/recon/gt/237_134500_000022_000001_move.wav"
+        },
+        {
+          "label": "SpiderTok",
+          "src": "assets/audio/recon/spidertok/237_134500_000022_000001_move.wav"
+        },
+        {
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/237_134500_000022_000001_move.wav"
+        },
+        {
+          "label": "HoliTok",
+          "src": "assets/audio/recon/holitok/237_134500_000022_000001_move.wav"
+        }
+      ]
+    },
+    {
+      "title": "260_123286_000045_000001_orbit · orbit",
+      "note": "Orbiting source — ground truth against each tokenizer's reconstruction.",
+      "clips": [
+        {
+          "label": "Ground truth",
+          "src": "assets/audio/recon/gt/260_123286_000045_000001_orbit.wav"
+        },
+        {
+          "label": "SpiderTok",
+          "src": "assets/audio/recon/spidertok/260_123286_000045_000001_orbit.wav"
+        },
+        {
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/260_123286_000045_000001_orbit.wav"
+        },
+        {
+          "label": "HoliTok",
+          "src": "assets/audio/recon/holitok/260_123286_000045_000001_orbit.wav"
+        }
+      ]
+    },
+    {
+      "title": "2830_3979_000025_000000_orbit · orbit",
+      "note": "Orbiting source — ground truth against each tokenizer's reconstruction.",
+      "clips": [
+        {
+          "label": "Ground truth",
+          "src": "assets/audio/recon/gt/2830_3979_000025_000000_orbit.wav"
+        },
+        {
+          "label": "SpiderTok",
+          "src": "assets/audio/recon/spidertok/2830_3979_000025_000000_orbit.wav"
+        },
+        {
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/2830_3979_000025_000000_orbit.wav"
+        },
+        {
+          "label": "HoliTok",
+          "src": "assets/audio/recon/holitok/2830_3979_000025_000000_orbit.wav"
+        }
+      ]
+    },
+    {
+      "title": "3570_5694_000014_000007_move · move",
+      "note": "Moving source — ground truth against each tokenizer's reconstruction.",
+      "clips": [
+        {
+          "label": "Ground truth",
+          "src": "assets/audio/recon/gt/3570_5694_000014_000007_move.wav"
+        },
+        {
+          "label": "SpiderTok",
+          "src": "assets/audio/recon/spidertok/3570_5694_000014_000007_move.wav"
+        },
+        {
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/3570_5694_000014_000007_move.wav"
+        },
+        {
+          "label": "HoliTok",
+          "src": "assets/audio/recon/holitok/3570_5694_000014_000007_move.wav"
+        }
+      ]
+    },
+    {
+      "title": "4970_29093_000044_000002_static · static",
+      "note": "Static source — ground truth against each tokenizer's reconstruction.",
+      "clips": [
+        {
+          "label": "Ground truth",
+          "src": "assets/audio/recon/gt/4970_29093_000044_000002_static.wav"
+        },
+        {
+          "label": "SpiderTok",
+          "src": "assets/audio/recon/spidertok/4970_29093_000044_000002_static.wav"
+        },
+        {
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/4970_29093_000044_000002_static.wav"
+        },
+        {
+          "label": "HoliTok",
+          "src": "assets/audio/recon/holitok/4970_29093_000044_000002_static.wav"
+        }
+      ]
+    },
+    {
+      "title": "4992_23283_000039_000003_static · static",
+      "note": "Static source — ground truth against each tokenizer's reconstruction.",
+      "clips": [
+        {
+          "label": "Ground truth",
+          "src": "assets/audio/recon/gt/4992_23283_000039_000003_static.wav"
+        },
+        {
+          "label": "SpiderTok",
+          "src": "assets/audio/recon/spidertok/4992_23283_000039_000003_static.wav"
+        },
+        {
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/4992_23283_000039_000003_static.wav"
+        },
+        {
+          "label": "HoliTok",
+          "src": "assets/audio/recon/holitok/4992_23283_000039_000003_static.wav"
+        }
+      ]
+    },
+    {
+      "title": "8455_210777_000005_000004_move · move",
+      "note": "Moving source — ground truth against each tokenizer's reconstruction.",
+      "clips": [
+        {
+          "label": "Ground truth",
+          "src": "assets/audio/recon/gt/8455_210777_000005_000004_move.wav"
+        },
+        {
+          "label": "SpiderTok",
+          "src": "assets/audio/recon/spidertok/8455_210777_000005_000004_move.wav"
+        },
+        {
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/8455_210777_000005_000004_move.wav"
+        },
+        {
+          "label": "HoliTok",
+          "src": "assets/audio/recon/holitok/8455_210777_000005_000004_move.wav"
+        }
+      ]
+    },
+    {
+      "title": "8463_294828_000040_000001_static · static",
+      "note": "Static source — ground truth against each tokenizer's reconstruction.",
+      "clips": [
+        {
+          "label": "Ground truth",
+          "src": "assets/audio/recon/gt/8463_294828_000040_000001_static.wav"
+        },
+        {
+          "label": "SpiderTok",
+          "src": "assets/audio/recon/spidertok/8463_294828_000040_000001_static.wav"
+        },
+        {
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/8463_294828_000040_000001_static.wav"
+        },
+        {
+          "label": "HoliTok",
+          "src": "assets/audio/recon/holitok/8463_294828_000040_000001_static.wav"
+        }
+      ]
+    }
+  ],
   "audio": [
     {
       "title": "Example 1",
-      "note": "Short description of this comparison.",
+      "note": "Target text: Kaufman Lake is also a popular full day hiking destination.",
       "clips": [
-        { "label": "Input", "src": "assets/audio/ex1_input.wav" },
-        { "label": "Baseline", "src": "assets/audio/ex1_baseline.wav" },
-        { "label": "Ours", "src": "assets/audio/ex1_ours.wav" }
+        {
+          "label": "Reference wave",
+          "src": "assets/audio/tts/zero-shot/static/01_common_voice_en_20303932-common_voice_en_20303930_prompt.wav"
+        },
+        {
+          "label": "Input",
+          "src": "assets/audio/ex1_input.wav"
+        },
+        {
+          "label": "Baseline",
+          "src": "assets/audio/ex1_baseline.wav"
+        },
+        {
+          "label": "Ours",
+          "src": "assets/audio/ex1_ours.wav"
+        }
       ]
     },
     {
       "title": "Example 2",
       "note": "Another qualitative example.",
       "clips": [
-        { "label": "Input", "src": "assets/audio/ex2_input.wav" },
-        { "label": "Ours", "src": "assets/audio/ex2_ours.wav" }
+        {
+          "label": "Input",
+          "src": "assets/audio/ex2_input.wav"
+        },
+        {
+          "label": "Ours",
+          "src": "assets/audio/ex2_ours.wav"
+        }
       ]
     }
   ],
