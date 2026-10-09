@@ -15,16 +15,16 @@
           "src": "assets/audio/recon/spidertok/4970_29093_000044_000002_static.wav"
         },
         {
-          "label": "MingTok",
-          "src": "assets/audio/recon/mingtok/4970_29093_000044_000002_static.wav"
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/4970_29093_000044_000002_static.wav"
         },
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/4970_29093_000044_000002_static.wav"
         },
         {
-          "label": "BANC",
-          "src": "assets/audio/recon/banc/4970_29093_000044_000002_static.wav"
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/4970_29093_000044_000002_static.wav"
         }
       ]
     },
@@ -41,16 +41,16 @@
           "src": "assets/audio/recon/spidertok/4992_23283_000039_000003_static.wav"
         },
         {
-          "label": "MingTok",
-          "src": "assets/audio/recon/mingtok/4992_23283_000039_000003_static.wav"
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/4992_23283_000039_000003_static.wav"
         },
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/4992_23283_000039_000003_static.wav"
         },
         {
-          "label": "BANC",
-          "src": "assets/audio/recon/banc/4992_23283_000039_000003_static.wav"
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/4992_23283_000039_000003_static.wav"
         }
       ]
     },
@@ -67,16 +67,16 @@
           "src": "assets/audio/recon/spidertok/8463_294828_000040_000001_static.wav"
         },
         {
-          "label": "MingTok",
-          "src": "assets/audio/recon/mingtok/8463_294828_000040_000001_static.wav"
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/8463_294828_000040_000001_static.wav"
         },
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/8463_294828_000040_000001_static.wav"
         },
         {
-          "label": "BANC",
-          "src": "assets/audio/recon/banc/8463_294828_000040_000001_static.wav"
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/8463_294828_000040_000001_static.wav"
         }
       ]
     },
@@ -93,16 +93,16 @@
           "src": "assets/audio/recon/spidertok/237_134500_000022_000001_move.wav"
         },
         {
-          "label": "MingTok",
-          "src": "assets/audio/recon/mingtok/237_134500_000022_000001_move.wav"
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/237_134500_000022_000001_move.wav"
         },
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/237_134500_000022_000001_move.wav"
         },
         {
-          "label": "BANC",
-          "src": "assets/audio/recon/banc/237_134500_000022_000001_move.wav"
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/237_134500_000022_000001_move.wav"
         }
       ]
     },
@@ -119,16 +119,16 @@
           "src": "assets/audio/recon/spidertok/3570_5694_000014_000007_move.wav"
         },
         {
-          "label": "MingTok",
-          "src": "assets/audio/recon/mingtok/3570_5694_000014_000007_move.wav"
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/3570_5694_000014_000007_move.wav"
         },
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/3570_5694_000014_000007_move.wav"
         },
         {
-          "label": "BANC",
-          "src": "assets/audio/recon/banc/3570_5694_000014_000007_move.wav"
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/3570_5694_000014_000007_move.wav"
         }
       ]
     },
@@ -145,16 +145,16 @@
           "src": "assets/audio/recon/spidertok/8455_210777_000005_000004_move.wav"
         },
         {
-          "label": "MingTok",
-          "src": "assets/audio/recon/mingtok/8455_210777_000005_000004_move.wav"
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/8455_210777_000005_000004_move.wav"
         },
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/8455_210777_000005_000004_move.wav"
         },
         {
-          "label": "BANC",
-          "src": "assets/audio/recon/banc/8455_210777_000005_000004_move.wav"
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/8455_210777_000005_000004_move.wav"
         }
       ]
     },
@@ -171,16 +171,16 @@
           "src": "assets/audio/recon/spidertok/1580_141084_000043_000003_orbit.wav"
         },
         {
-          "label": "MingTok",
-          "src": "assets/audio/recon/mingtok/1580_141084_000043_000003_orbit.wav"
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/1580_141084_000043_000003_orbit.wav"
         },
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/1580_141084_000043_000003_orbit.wav"
         },
         {
-          "label": "BANC",
-          "src": "assets/audio/recon/banc/1580_141084_000043_000003_orbit.wav"
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/1580_141084_000043_000003_orbit.wav"
         }
       ]
     },
@@ -197,16 +197,16 @@
           "src": "assets/audio/recon/spidertok/260_123286_000045_000001_orbit.wav"
         },
         {
-          "label": "MingTok",
-          "src": "assets/audio/recon/mingtok/260_123286_000045_000001_orbit.wav"
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/260_123286_000045_000001_orbit.wav"
         },
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/260_123286_000045_000001_orbit.wav"
         },
         {
-          "label": "BANC",
-          "src": "assets/audio/recon/banc/260_123286_000045_000001_orbit.wav"
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/260_123286_000045_000001_orbit.wav"
         }
       ]
     },
@@ -223,16 +223,16 @@
           "src": "assets/audio/recon/spidertok/2830_3979_000025_000000_orbit.wav"
         },
         {
-          "label": "MingTok",
-          "src": "assets/audio/recon/mingtok/2830_3979_000025_000000_orbit.wav"
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/2830_3979_000025_000000_orbit.wav"
         },
         {
           "label": "HoliTok",
           "src": "assets/audio/recon/holitok/2830_3979_000025_000000_orbit.wav"
         },
         {
-          "label": "BANC",
-          "src": "assets/audio/recon/banc/2830_3979_000025_000000_orbit.wav"
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/2830_3979_000025_000000_orbit.wav"
         }
       ]
     }
@@ -420,7 +420,7 @@
       "note": "No reference audio: the model is driven by a text description of the target style, the utterance to speak, and an explicit spatial instruction.",
       "examples": [
         {
-          "title": "01 · static",
+          "title": "static · rank 1",
           "details": [
             {
               "label": "Text",
@@ -443,7 +443,7 @@
           ]
         },
         {
-          "title": "02 · static",
+          "title": "static · rank 2",
           "details": [
             {
               "label": "Text",
@@ -466,7 +466,7 @@
           ]
         },
         {
-          "title": "03 · static",
+          "title": "static · rank 3",
           "details": [
             {
               "label": "Text",
@@ -489,7 +489,7 @@
           ]
         },
         {
-          "title": "04 · move",
+          "title": "move · rank 1",
           "details": [
             {
               "label": "Text",
@@ -512,7 +512,7 @@
           ]
         },
         {
-          "title": "05 · move",
+          "title": "move · rank 2",
           "details": [
             {
               "label": "Text",
@@ -535,7 +535,7 @@
           ]
         },
         {
-          "title": "06 · move",
+          "title": "move · rank 3",
           "details": [
             {
               "label": "Text",
@@ -558,7 +558,7 @@
           ]
         },
         {
-          "title": "07 · orbit",
+          "title": "orbit · rank 1",
           "details": [
             {
               "label": "Text",
@@ -581,7 +581,7 @@
           ]
         },
         {
-          "title": "08 · orbit",
+          "title": "orbit · rank 2",
           "details": [
             {
               "label": "Text",
@@ -604,7 +604,7 @@
           ]
         },
         {
-          "title": "09 · orbit",
+          "title": "orbit · rank 3",
           "details": [
             {
               "label": "Text",
