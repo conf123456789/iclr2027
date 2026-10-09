@@ -29,7 +29,6 @@
       <a href="#recon">Reconstruction</a>
       <a href="#audio">TTS</a>
       <a href="#edit">Editing</a>
-      <a href="#images">Images</a>
     </nav>
   </header>
 
@@ -46,12 +45,11 @@
       <div class="section-head">
         <h2>Tokenizer Reconstruction Demos</h2>
         <p>
-          Reconstruction performance against SpiderTok and other SOTA tokenizers. Each row
-          carries the ground-truth binaural clip together with every tokenizer's
-          reconstruction of it, so the same utterance can be A/B'd in place. The clips are
-          spread across <em>static</em>, <em>moving</em>, and <em>orbiting</em> sources:
-          content and timbre are usually preserved by all systems, while the spatial image
-          is where the reconstructions diverge.
+          Reconstruction performance against SpiderTok and other SOTA tokenizers. Note: The
+          BANC model was retrained using the same binaural speech training data and then
+          performed binaural speech reconstruction, whereas both HoliTok and MingTok only
+          support monaural speech input, so reconstruction was performed on the downmixed
+          monaural speech.
         </p>
       </div>
       <div id="recon-root" class="stack"></div>
@@ -86,17 +84,6 @@
         </p>
       </div>
       <div id="edit-root" class="stack"></div>
-    </section>
-
-    <section id="images" class="section">
-      <div class="section-head">
-        <h2>Figures &amp; images</h2>
-        <p>
-          Overview of the SpiderTok and SpiderAudio pipelines, together with additional
-          qualitative results and visualisations.
-        </p>
-      </div>
-      <div id="image-root" class="image-grid"></div>
     </section>
   </main>
 
