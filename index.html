@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=1" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true"></div>
@@ -24,6 +24,13 @@
       Each segment is a 16kHz binaural speech. Please put on your headphones and listen.
       The voice loading may take a moment. Thank you for your patience!
     </p>
+    <!-- TODO: 开源后把下面三个 href 换成真实链接 -->
+    <div class="cta">
+      <a class="btn" href="#">Github Code</a>
+      <a class="btn" href="#">HuggingFace Checkpoint</a>
+      <a class="btn" href="#">Paper</a>
+    </div>
+    <p class="cta-note">The code and checkpoints will be released after the ICLR review period.</p>
     <nav class="jump" aria-label="Sections">
       <a href="#introduction">Introduction</a>
       <a href="#recon">Reconstruction</a>
@@ -46,10 +53,12 @@
         <figure class="overview">
           <img src="assets/images/SipderTok.png"
                alt="Overview of the SpiderTok tokenizer: stereo encoder, causal semantic bottleneck and stereo decoder, together with its three training stages." />
+          <figcaption>SpiderTok</figcaption>
         </figure>
         <figure class="overview">
           <img src="assets/images/SpiderAudio.png"
                alt="Overview of SpiderAudio: stage 1 for ASR, and stage 2 for understanding, TTS and editing built on the SpiderTok backbone." />
+          <figcaption>SpiderAudio</figcaption>
         </figure>
       </div>
     </section>
@@ -59,9 +68,9 @@
         <h2>Tokenizer Reconstruction Demos</h2>
         <p>
           Reconstruction performance against SpiderTok and other SOTA tokenizers. Note: The
-          BANC model was retrained using the same binaural speech training data and then
-          performed binaural speech reconstruction, whereas both HoliTok and MingTok only
-          support monaural speech input, so reconstruction was performed on the downmixed
+          BANC model is retrained using the same binaural speech training data and then
+          perform binaural speech reconstruction, whereas both HoliTok and MingTok only
+          support monaural speech input, so reconstruction is performed on the downmixed
           monaural speech.
         </p>
       </div>
