@@ -20,6 +20,11 @@
       Interactive examples for the paper. Drop audio and images into
       <code>assets/</code>, then list them in <code>demos.json</code>.
     </p>
+    <p class="hint">
+      Every clip is 16 kHz binaural audio. Please listen on headphones, and compare a
+      sample against its ground truth in the same row — the difference is in the spatial
+      image, which does not survive loudspeakers.
+    </p>
     <nav class="jump" aria-label="Sections">
       <a href="#introduction">Introduction</a>
       <a href="#recon">Reconstruction</a>
@@ -41,7 +46,14 @@
     <section id="recon" class="section">
       <div class="section-head">
         <h2>Tokenizer Reconstruction Demos</h2>
-        <p>Reconstruction performance comparison against SpiderTok and other SOTA tokenizers.</p>
+        <p>
+          Reconstruction performance against SpiderTok and other SOTA tokenizers. Each row
+          carries the ground-truth binaural clip together with every tokenizer's
+          reconstruction of it, so the same utterance can be A/B'd in place. The clips are
+          spread across <em>static</em>, <em>moving</em>, and <em>orbiting</em> sources:
+          content and timbre are usually preserved by all systems, while the spatial image
+          is where the reconstructions diverge.
+        </p>
       </div>
       <div id="recon-root" class="stack"></div>
     </section>
@@ -49,7 +61,14 @@
     <section id="audio" class="section">
       <div class="section-head">
         <h2>TTS Demos</h2>
-        <p>Zero-shot spatial TTS demos.</p>
+        <p>
+          Text-to-speech with explicit spatial control, in two settings. In
+          <em>zero-shot</em> the target voice and its trajectory are inferred from a short
+          reference clip plus a target text; in <em>instruct</em> they are specified in
+          text instead, with no reference audio at all. Both must produce the binaural
+          target — same voice, continuing along the same trajectory — while saying words
+          that were never recorded.
+        </p>
       </div>
       <div id="audio-root" class="stack"></div>
     </section>
@@ -57,7 +76,15 @@
     <section id="edit" class="section">
       <div class="section-head">
         <h2>Editing Demos</h2>
-        <p>Instruction-guided spatial speech editing.</p>
+        <p>
+          Instruction-guided spatial speech editing, grouped into six edit categories:
+          <em>content</em>, <em>emotion</em>, <em>paralinguistics</em>, <em>prosody</em>,
+          <em>spatial rendering</em>, and <em>spatial state</em>. Each example pairs the
+          original clip with the edited output and prints the instruction the model was
+          given. Within a category the samples are distributed over static, moving, and
+          orbiting sources, so each edit is exercised under more than one spatial
+          condition.
+        </p>
       </div>
       <div id="edit-root" class="stack"></div>
     </section>
@@ -65,7 +92,10 @@
     <section id="images" class="section">
       <div class="section-head">
         <h2>Figures &amp; images</h2>
-        <p>Qualitative results and visualizations.</p>
+        <p>
+          Overview of the SpiderTok and SpiderAudio pipelines, together with additional
+          qualitative results and visualisations.
+        </p>
       </div>
       <div id="image-root" class="image-grid"></div>
     </section>
