@@ -3,138 +3,8 @@
   "description": "Unified continuous representations for binaural spatial speech understanding, generation, and editing.",
   "recon": [
     {
-      "title": "1580_141084_000043_000003_orbit · orbit",
-      "note": "Orbiting source — ground truth against each tokenizer's reconstruction.",
-      "clips": [
-        {
-          "label": "Ground truth",
-          "src": "assets/audio/recon/gt/1580_141084_000043_000003_orbit.wav"
-        },
-        {
-          "label": "SpiderTok",
-          "src": "assets/audio/recon/spidertok/1580_141084_000043_000003_orbit.wav"
-        },
-        {
-          "label": "MingTok",
-          "src": "assets/audio/recon/mingtok/1580_141084_000043_000003_orbit.wav"
-        },
-        {
-          "label": "HoliTok",
-          "src": "assets/audio/recon/holitok/1580_141084_000043_000003_orbit.wav"
-        },
-        {
-          "label": "BANC",
-          "src": "assets/audio/recon/banc/1580_141084_000043_000003_orbit.wav"
-        }
-      ]
-    },
-    {
-      "title": "237_134500_000022_000001_move · move",
-      "note": "Moving source — ground truth against each tokenizer's reconstruction.",
-      "clips": [
-        {
-          "label": "Ground truth",
-          "src": "assets/audio/recon/gt/237_134500_000022_000001_move.wav"
-        },
-        {
-          "label": "SpiderTok",
-          "src": "assets/audio/recon/spidertok/237_134500_000022_000001_move.wav"
-        },
-        {
-          "label": "MingTok",
-          "src": "assets/audio/recon/mingtok/237_134500_000022_000001_move.wav"
-        },
-        {
-          "label": "HoliTok",
-          "src": "assets/audio/recon/holitok/237_134500_000022_000001_move.wav"
-        },
-        {
-          "label": "BANC",
-          "src": "assets/audio/recon/banc/237_134500_000022_000001_move.wav"
-        }
-      ]
-    },
-    {
-      "title": "260_123286_000045_000001_orbit · orbit",
-      "note": "Orbiting source — ground truth against each tokenizer's reconstruction.",
-      "clips": [
-        {
-          "label": "Ground truth",
-          "src": "assets/audio/recon/gt/260_123286_000045_000001_orbit.wav"
-        },
-        {
-          "label": "SpiderTok",
-          "src": "assets/audio/recon/spidertok/260_123286_000045_000001_orbit.wav"
-        },
-        {
-          "label": "MingTok",
-          "src": "assets/audio/recon/mingtok/260_123286_000045_000001_orbit.wav"
-        },
-        {
-          "label": "HoliTok",
-          "src": "assets/audio/recon/holitok/260_123286_000045_000001_orbit.wav"
-        },
-        {
-          "label": "BANC",
-          "src": "assets/audio/recon/banc/260_123286_000045_000001_orbit.wav"
-        }
-      ]
-    },
-    {
-      "title": "2830_3979_000025_000000_orbit · orbit",
-      "note": "Orbiting source — ground truth against each tokenizer's reconstruction.",
-      "clips": [
-        {
-          "label": "Ground truth",
-          "src": "assets/audio/recon/gt/2830_3979_000025_000000_orbit.wav"
-        },
-        {
-          "label": "SpiderTok",
-          "src": "assets/audio/recon/spidertok/2830_3979_000025_000000_orbit.wav"
-        },
-        {
-          "label": "MingTok",
-          "src": "assets/audio/recon/mingtok/2830_3979_000025_000000_orbit.wav"
-        },
-        {
-          "label": "HoliTok",
-          "src": "assets/audio/recon/holitok/2830_3979_000025_000000_orbit.wav"
-        },
-        {
-          "label": "BANC",
-          "src": "assets/audio/recon/banc/2830_3979_000025_000000_orbit.wav"
-        }
-      ]
-    },
-    {
-      "title": "3570_5694_000014_000007_move · move",
-      "note": "Moving source — ground truth against each tokenizer's reconstruction.",
-      "clips": [
-        {
-          "label": "Ground truth",
-          "src": "assets/audio/recon/gt/3570_5694_000014_000007_move.wav"
-        },
-        {
-          "label": "SpiderTok",
-          "src": "assets/audio/recon/spidertok/3570_5694_000014_000007_move.wav"
-        },
-        {
-          "label": "MingTok",
-          "src": "assets/audio/recon/mingtok/3570_5694_000014_000007_move.wav"
-        },
-        {
-          "label": "HoliTok",
-          "src": "assets/audio/recon/holitok/3570_5694_000014_000007_move.wav"
-        },
-        {
-          "label": "BANC",
-          "src": "assets/audio/recon/banc/3570_5694_000014_000007_move.wav"
-        }
-      ]
-    },
-    {
-      "title": "4970_29093_000044_000002_static · static",
-      "note": "Static source — ground truth against each tokenizer's reconstruction.",
+      "title": "static · rank 1",
+      "note": "Static source (4970_29093_000044_000002_static) — ground truth against each tokenizer's reconstruction.",
       "clips": [
         {
           "label": "Ground truth",
@@ -159,8 +29,8 @@
       ]
     },
     {
-      "title": "4992_23283_000039_000003_static · static",
-      "note": "Static source — ground truth against each tokenizer's reconstruction.",
+      "title": "static · rank 2",
+      "note": "Static source (4992_23283_000039_000003_static) — ground truth against each tokenizer's reconstruction.",
       "clips": [
         {
           "label": "Ground truth",
@@ -185,8 +55,86 @@
       ]
     },
     {
-      "title": "8455_210777_000005_000004_move · move",
-      "note": "Moving source — ground truth against each tokenizer's reconstruction.",
+      "title": "static · rank 3",
+      "note": "Static source (8463_294828_000040_000001_static) — ground truth against each tokenizer's reconstruction.",
+      "clips": [
+        {
+          "label": "Ground truth",
+          "src": "assets/audio/recon/gt/8463_294828_000040_000001_static.wav"
+        },
+        {
+          "label": "SpiderTok",
+          "src": "assets/audio/recon/spidertok/8463_294828_000040_000001_static.wav"
+        },
+        {
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/8463_294828_000040_000001_static.wav"
+        },
+        {
+          "label": "HoliTok",
+          "src": "assets/audio/recon/holitok/8463_294828_000040_000001_static.wav"
+        },
+        {
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/8463_294828_000040_000001_static.wav"
+        }
+      ]
+    },
+    {
+      "title": "move · rank 1",
+      "note": "Moving source (237_134500_000022_000001_move) — ground truth against each tokenizer's reconstruction.",
+      "clips": [
+        {
+          "label": "Ground truth",
+          "src": "assets/audio/recon/gt/237_134500_000022_000001_move.wav"
+        },
+        {
+          "label": "SpiderTok",
+          "src": "assets/audio/recon/spidertok/237_134500_000022_000001_move.wav"
+        },
+        {
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/237_134500_000022_000001_move.wav"
+        },
+        {
+          "label": "HoliTok",
+          "src": "assets/audio/recon/holitok/237_134500_000022_000001_move.wav"
+        },
+        {
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/237_134500_000022_000001_move.wav"
+        }
+      ]
+    },
+    {
+      "title": "move · rank 2",
+      "note": "Moving source (3570_5694_000014_000007_move) — ground truth against each tokenizer's reconstruction.",
+      "clips": [
+        {
+          "label": "Ground truth",
+          "src": "assets/audio/recon/gt/3570_5694_000014_000007_move.wav"
+        },
+        {
+          "label": "SpiderTok",
+          "src": "assets/audio/recon/spidertok/3570_5694_000014_000007_move.wav"
+        },
+        {
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/3570_5694_000014_000007_move.wav"
+        },
+        {
+          "label": "HoliTok",
+          "src": "assets/audio/recon/holitok/3570_5694_000014_000007_move.wav"
+        },
+        {
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/3570_5694_000014_000007_move.wav"
+        }
+      ]
+    },
+    {
+      "title": "move · rank 3",
+      "note": "Moving source (8455_210777_000005_000004_move) — ground truth against each tokenizer's reconstruction.",
       "clips": [
         {
           "label": "Ground truth",
@@ -211,28 +159,80 @@
       ]
     },
     {
-      "title": "8463_294828_000040_000001_static · static",
-      "note": "Static source — ground truth against each tokenizer's reconstruction.",
+      "title": "orbit · rank 1",
+      "note": "Orbiting source (1580_141084_000043_000003_orbit) — ground truth against each tokenizer's reconstruction.",
       "clips": [
         {
           "label": "Ground truth",
-          "src": "assets/audio/recon/gt/8463_294828_000040_000001_static.wav"
+          "src": "assets/audio/recon/gt/1580_141084_000043_000003_orbit.wav"
         },
         {
           "label": "SpiderTok",
-          "src": "assets/audio/recon/spidertok/8463_294828_000040_000001_static.wav"
+          "src": "assets/audio/recon/spidertok/1580_141084_000043_000003_orbit.wav"
         },
         {
           "label": "MingTok",
-          "src": "assets/audio/recon/mingtok/8463_294828_000040_000001_static.wav"
+          "src": "assets/audio/recon/mingtok/1580_141084_000043_000003_orbit.wav"
         },
         {
           "label": "HoliTok",
-          "src": "assets/audio/recon/holitok/8463_294828_000040_000001_static.wav"
+          "src": "assets/audio/recon/holitok/1580_141084_000043_000003_orbit.wav"
         },
         {
           "label": "BANC",
-          "src": "assets/audio/recon/banc/8463_294828_000040_000001_static.wav"
+          "src": "assets/audio/recon/banc/1580_141084_000043_000003_orbit.wav"
+        }
+      ]
+    },
+    {
+      "title": "orbit · rank 2",
+      "note": "Orbiting source (260_123286_000045_000001_orbit) — ground truth against each tokenizer's reconstruction.",
+      "clips": [
+        {
+          "label": "Ground truth",
+          "src": "assets/audio/recon/gt/260_123286_000045_000001_orbit.wav"
+        },
+        {
+          "label": "SpiderTok",
+          "src": "assets/audio/recon/spidertok/260_123286_000045_000001_orbit.wav"
+        },
+        {
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/260_123286_000045_000001_orbit.wav"
+        },
+        {
+          "label": "HoliTok",
+          "src": "assets/audio/recon/holitok/260_123286_000045_000001_orbit.wav"
+        },
+        {
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/260_123286_000045_000001_orbit.wav"
+        }
+      ]
+    },
+    {
+      "title": "orbit · rank 3",
+      "note": "Orbiting source (2830_3979_000025_000000_orbit) — ground truth against each tokenizer's reconstruction.",
+      "clips": [
+        {
+          "label": "Ground truth",
+          "src": "assets/audio/recon/gt/2830_3979_000025_000000_orbit.wav"
+        },
+        {
+          "label": "SpiderTok",
+          "src": "assets/audio/recon/spidertok/2830_3979_000025_000000_orbit.wav"
+        },
+        {
+          "label": "MingTok",
+          "src": "assets/audio/recon/mingtok/2830_3979_000025_000000_orbit.wav"
+        },
+        {
+          "label": "HoliTok",
+          "src": "assets/audio/recon/holitok/2830_3979_000025_000000_orbit.wav"
+        },
+        {
+          "label": "BANC",
+          "src": "assets/audio/recon/banc/2830_3979_000025_000000_orbit.wav"
         }
       ]
     }
@@ -251,12 +251,8 @@
               "src": "assets/audio/tts/zero-shot/static/01_common_voice_en_20303932-common_voice_en_20303930_prompt.wav"
             },
             {
-              "label": "Ground truth",
+              "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/static/01_common_voice_en_20303932-common_voice_en_20303930_target.wav"
-            },
-            {
-              "label": "SpiderAudio",
-              "src": "assets/audio/tts/zero-shot/static/01_common_voice_en_20303932-common_voice_en_20303930_generated.wav"
             }
           ]
         },
@@ -269,12 +265,8 @@
               "src": "assets/audio/tts/zero-shot/static/02_common_voice_en_19767978-common_voice_en_19767980_prompt.wav"
             },
             {
-              "label": "Ground truth",
+              "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/static/02_common_voice_en_19767978-common_voice_en_19767980_target.wav"
-            },
-            {
-              "label": "SpiderAudio",
-              "src": "assets/audio/tts/zero-shot/static/02_common_voice_en_19767978-common_voice_en_19767980_generated.wav"
             }
           ]
         },
@@ -287,12 +279,8 @@
               "src": "assets/audio/tts/zero-shot/static/03_common_voice_en_21869715-common_voice_en_21869718_prompt.wav"
             },
             {
-              "label": "Ground truth",
+              "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/static/03_common_voice_en_21869715-common_voice_en_21869718_target.wav"
-            },
-            {
-              "label": "SpiderAudio",
-              "src": "assets/audio/tts/zero-shot/static/03_common_voice_en_21869715-common_voice_en_21869718_generated.wav"
             }
           ]
         },
@@ -305,12 +293,8 @@
               "src": "assets/audio/tts/zero-shot/move/01_common_voice_en_19665909-common_voice_en_19665911_prompt.wav"
             },
             {
-              "label": "Ground truth",
+              "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/move/01_common_voice_en_19665909-common_voice_en_19665911_target.wav"
-            },
-            {
-              "label": "SpiderAudio",
-              "src": "assets/audio/tts/zero-shot/move/01_common_voice_en_19665909-common_voice_en_19665911_generated.wav"
             }
           ]
         },
@@ -323,12 +307,8 @@
               "src": "assets/audio/tts/zero-shot/move/02_common_voice_en_37237245-common_voice_en_37237247_prompt.wav"
             },
             {
-              "label": "Ground truth",
+              "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/move/02_common_voice_en_37237245-common_voice_en_37237247_target.wav"
-            },
-            {
-              "label": "SpiderAudio",
-              "src": "assets/audio/tts/zero-shot/move/02_common_voice_en_37237245-common_voice_en_37237247_generated.wav"
             }
           ]
         },
@@ -341,12 +321,8 @@
               "src": "assets/audio/tts/zero-shot/move/03_common_voice_en_23728823-common_voice_en_23728827_prompt.wav"
             },
             {
-              "label": "Ground truth",
+              "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/move/03_common_voice_en_23728823-common_voice_en_23728827_target.wav"
-            },
-            {
-              "label": "SpiderAudio",
-              "src": "assets/audio/tts/zero-shot/move/03_common_voice_en_23728823-common_voice_en_23728827_generated.wav"
             }
           ]
         },
@@ -359,12 +335,8 @@
               "src": "assets/audio/tts/zero-shot/orbit/01_common_voice_en_20289354-common_voice_en_20289353_prompt.wav"
             },
             {
-              "label": "Ground truth",
+              "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/orbit/01_common_voice_en_20289354-common_voice_en_20289353_target.wav"
-            },
-            {
-              "label": "SpiderAudio",
-              "src": "assets/audio/tts/zero-shot/orbit/01_common_voice_en_20289354-common_voice_en_20289353_generated.wav"
             }
           ]
         },
@@ -377,12 +349,8 @@
               "src": "assets/audio/tts/zero-shot/orbit/02_common_voice_en_18770703-common_voice_en_18770702_prompt.wav"
             },
             {
-              "label": "Ground truth",
+              "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/orbit/02_common_voice_en_18770703-common_voice_en_18770702_target.wav"
-            },
-            {
-              "label": "SpiderAudio",
-              "src": "assets/audio/tts/zero-shot/orbit/02_common_voice_en_18770703-common_voice_en_18770702_generated.wav"
             }
           ]
         },
@@ -395,12 +363,8 @@
               "src": "assets/audio/tts/zero-shot/orbit/03_common_voice_en_20303932-common_voice_en_20303934_prompt.wav"
             },
             {
-              "label": "Ground truth",
+              "label": "generated wave",
               "src": "assets/audio/tts/zero-shot/orbit/03_common_voice_en_20303932-common_voice_en_20303934_target.wav"
-            },
-            {
-              "label": "SpiderAudio",
-              "src": "assets/audio/tts/zero-shot/orbit/03_common_voice_en_20303932-common_voice_en_20303934_generated.wav"
             }
           ]
         }
