@@ -21,45 +21,18 @@
       <code>assets/</code>, then list them in <code>demos.json</code>.
     </p>
     <nav class="jump" aria-label="Sections">
-      <a href="#introduction">Introduction</a>
-      <a href="#recon">Reconstruction</a>
-      <a href="#audio">TTS</a>
-      <a href="#edit">Editing</a>
+      <a href="#audio">Audio</a>
       <a href="#images">Images</a>
     </nav>
   </header>
 
   <main>
-    <section id="introduction" class="section">
-      <div class="section-head">
-        <h2>Introduction</h2>
-        <p>Recent advances in unified continuous representations for joint monaural speech understanding, generation, and even editing have shown promising results. Extending these representations to spatial speech tasks requires not only modeling semantic and acoustic information, but also preserving spatial state information. Existing spatial representations, however, are designed for a single capability: some take hand-crafted interaural features as input and do not support waveform synthesis, while others optimize reconstruction fidelity rather than compatibility with a language model. To this end, we propose SpiderTok, a single all-round speech tokenizer that integrates semantic, acoustic, and spatial features in binaural speech for unified spatial understanding, generation, and editing. SpiderTok simultaneously encodes 16 kHz binaural speech into a compact 50 Hz unified continuous representation. Its multi-stage training mainly includes acoustic and spatial reconstruction, semantic distillation, and joint refinement of unified representations. Building on this tokenizer, we further develop SpiderAudio, an all-round large speech language model that supports joint binaural speech understanding, generation, and editing within a single framework. In addition, we propose a &ldquo;Thinking-Before-Generation&rdquo; strategy to guide binaural spatial speech editing. Experiments show that SpiderTok reconstructs binaural speech with high fidelity while outperforming binaural baselines on all four spatial metrics, with up to 23% relative gain in angular cosine similarity, and that the unified representation lets SpiderAudio surpass spatial baselines on understanding across static, moving, and orbiting sources, while also supporting instruction-guided spatial editing.</p>
-        <p style="color: #ffffff;">The overview of SpiderTok and SpiderAudio is shown as following.</p>
-      </div>
-    </section>
-
-    <section id="recon" class="section">
-      <div class="section-head">
-        <h2>Tokenizer Reconstruction Demos</h2>
-        <p>Reconstruction performance comparison against SpiderTok and other SOTA tokenizers.</p>
-      </div>
-      <div id="recon-root" class="stack"></div>
-    </section>
-
     <section id="audio" class="section">
       <div class="section-head">
-        <h2>TTS Demos</h2>
-        <p>Zero-shot spatial TTS demos.</p>
+        <h2>Audio examples</h2>
+        <p>Compare clips side by side. Replace placeholders with your <code>.wav</code> files.</p>
       </div>
       <div id="audio-root" class="stack"></div>
-    </section>
-
-    <section id="edit" class="section">
-      <div class="section-head">
-        <h2>Editing Demos</h2>
-        <p>Instruction-guided spatial speech editing.</p>
-      </div>
-      <div id="edit-root" class="stack"></div>
     </section>
 
     <section id="images" class="section">
