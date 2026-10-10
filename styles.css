@@ -117,6 +117,25 @@ h3 {
   letter-spacing: -0.02em;
 }
 
+/* logo 与 h1 是兄弟节点 —— app.js 用 textContent 覆写标题，
+   放进 h1 内部会被清掉。*/
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin: 0 0 1rem;
+}
+
+.hero .brand h1 {
+  margin: 0;
+}
+
+.brand-logo {
+  flex: none;
+  height: clamp(2.4rem, 6vw, 3.6rem);   /* 与 h1 的 font-size 同一条 clamp */
+  width: auto;
+}
+
 .lede {
   margin: 0;
   max-width: 38rem;
@@ -214,7 +233,7 @@ h3 {
   transform: translateY(-1px);
 }
 
-.btn .ico {
+.ico {
   margin-right: 0.45rem;
   font-size: 1rem;
   line-height: 1;
