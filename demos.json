@@ -1679,7 +1679,257 @@
     }
   ],
   "understanding": {
-    "results": "assets/audio/understanding/understanding_results.json",
-    "wavPrefix": "assets/audio/understanding/"
+    "tasks": [
+      {
+        "key": "Dir",
+        "label": "Direction"
+      },
+      {
+        "key": "Updown",
+        "label": "Up / Down"
+      },
+      {
+        "key": "Dist",
+        "label": "Distance"
+      },
+      {
+        "key": "Motion",
+        "label": "Motion"
+      }
+    ],
+    "note": "Questions asked: Dir · Updown · Dist · Motion · ASR",
+    "groups": [
+      {
+        "title": "Static",
+        "rows": [
+          {
+            "id": "4446-2275-0006",
+            "src": "assets/audio/understanding/static/4446-2275-0006.wav",
+            "Dir": {
+              "gt": "front",
+              "pred": "front"
+            },
+            "Updown": {
+              "gt": "above",
+              "pred": "above"
+            },
+            "Dist": {
+              "gt": "mid",
+              "pred": "mid"
+            },
+            "Motion": {
+              "gt": "static",
+              "pred": "static"
+            },
+            "ASR": {
+              "gt": "i thought it might be sister kate or cousin mike would be happening along",
+              "pred": "I thought it might be sister Kate or cousin Mike would be happening along."
+            }
+          },
+          {
+            "id": "4507-16021-0025",
+            "src": "assets/audio/understanding/static/4507-16021-0025.wav",
+            "Dir": {
+              "gt": "back",
+              "pred": "back"
+            },
+            "Updown": {
+              "gt": "level",
+              "pred": "level"
+            },
+            "Dist": {
+              "gt": "mid",
+              "pred": "mid"
+            },
+            "Motion": {
+              "gt": "static",
+              "pred": "static"
+            },
+            "ASR": {
+              "gt": "to meet the needs of this conflict wretchedness has invented a language of combat which is slang",
+              "pred": "To meet the needs of this conflict, wretchedness has invented a language of combat, which is slang."
+            }
+          },
+          {
+            "id": "5142-36377-0007",
+            "src": "assets/audio/understanding/static/5142-36377-0007.wav",
+            "Dir": {
+              "gt": "front",
+              "pred": "front"
+            },
+            "Updown": {
+              "gt": "below",
+              "pred": "below"
+            },
+            "Dist": {
+              "gt": "mid",
+              "pred": "mid"
+            },
+            "Motion": {
+              "gt": "static",
+              "pred": "static"
+            },
+            "ASR": {
+              "gt": "a little cracked that in the popular phrase was my impression of the stranger who now made his appearance in the supper room",
+              "pred": "A little cracked, that in the popular phrase was my impression of the stranger who now made his appearance in the supper room."
+            }
+          }
+        ]
+      },
+      {
+        "title": "Move",
+        "rows": [
+          {
+            "id": "4507-16021-0050",
+            "src": "assets/audio/understanding/move/4507-16021-0050.wav",
+            "Dir": {
+              "gt": "from front to back-left",
+              "pred": "from front to back-left"
+            },
+            "Updown": {
+              "gt": "from above to below",
+              "pred": "from above to below"
+            },
+            "Dist": {
+              "gt": "from mid to near",
+              "pred": "from mid to near"
+            },
+            "Motion": {
+              "gt": "move",
+              "pred": "move"
+            },
+            "ASR": {
+              "gt": "and you belong to that small class who are happy",
+              "pred": "And you belong to that small class who are happy."
+            }
+          },
+          {
+            "id": "5142-33396-0019",
+            "src": "assets/audio/understanding/move/5142-33396-0019.wav",
+            "Dir": {
+              "gt": "from back-left to front",
+              "pred": "from back-left to front"
+            },
+            "Updown": {
+              "gt": "above",
+              "pred": "above"
+            },
+            "Dist": {
+              "gt": "mid",
+              "pred": "mid"
+            },
+            "Motion": {
+              "gt": "move",
+              "pred": "move"
+            },
+            "ASR": {
+              "gt": "oh it is better to live on the sea and let other men raise your crops and cook your meals",
+              "pred": "Oh, it is better to live on the sea and let other men raise your crops and cook your meals."
+            }
+          },
+          {
+            "id": "260-123440-0003",
+            "src": "assets/audio/understanding/move/260-123440-0003.wav",
+            "Dir": {
+              "gt": "from front to right",
+              "pred": "from front to right"
+            },
+            "Updown": {
+              "gt": "from level to above",
+              "pred": "from level to above"
+            },
+            "Dist": {
+              "gt": "near",
+              "pred": "near"
+            },
+            "Motion": {
+              "gt": "move",
+              "pred": "move"
+            },
+            "ASR": {
+              "gt": "oh won't she be savage if i've kept her waiting",
+              "pred": "Oh, won't she be savage if I've kept her waiting?"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Orbit",
+        "rows": [
+          {
+            "id": "2961-960-0007",
+            "src": "assets/audio/understanding/orbit/2961-960-0007.wav",
+            "Dir": {
+              "gt": "circling",
+              "pred": "circling"
+            },
+            "Updown": {
+              "gt": "level",
+              "pred": "level"
+            },
+            "Dist": {
+              "gt": "mid",
+              "pred": "mid"
+            },
+            "Motion": {
+              "gt": "orbit",
+              "pred": "orbit"
+            },
+            "ASR": {
+              "gt": "but they have nothing to do with the interpretation of plato and in spirit they are opposed to him",
+              "pred": "But they have nothing to do with the interpretation of Plato and in spirit they are opposed to him."
+            }
+          },
+          {
+            "id": "3575-170457-0044",
+            "src": "assets/audio/understanding/orbit/3575-170457-0044.wav",
+            "Dir": {
+              "gt": "circling",
+              "pred": "circling"
+            },
+            "Updown": {
+              "gt": "level",
+              "pred": "level"
+            },
+            "Dist": {
+              "gt": "mid",
+              "pred": "mid"
+            },
+            "Motion": {
+              "gt": "orbit",
+              "pred": "orbit"
+            },
+            "ASR": {
+              "gt": "after this disappointment i never dare reckon with certainty on the enjoyment of a pleasure again it seems as if some fatality stood between you and me",
+              "pred": "After this disappointment, I never dare reckon with certainty on the enjoyment of a pleasure again. It seems as if some fatality stood between you and me."
+            }
+          },
+          {
+            "id": "672-122797-0067",
+            "src": "assets/audio/understanding/orbit/672-122797-0067.wav",
+            "Dir": {
+              "gt": "circling",
+              "pred": "circling"
+            },
+            "Updown": {
+              "gt": "level",
+              "pred": "level"
+            },
+            "Dist": {
+              "gt": "mid",
+              "pred": "mid"
+            },
+            "Motion": {
+              "gt": "orbit",
+              "pred": "orbit"
+            },
+            "ASR": {
+              "gt": "the trunks were moved the tree was pulled out and thrown rather hard it is true down on the floor but a man drew him towards the stairs where the daylight shone",
+              "pred": "The trunks were moved, the tree was pulled out and thrown rather hard, it is true, down on the floor. But a man drew him towards the stairs where the daylight shone."
+            }
+          }
+        ]
+      }
+    ]
   }
 }
