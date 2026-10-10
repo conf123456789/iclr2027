@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=10" />
+  <link rel="stylesheet" href="styles.css?v=13" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true"></div>
@@ -27,7 +27,7 @@
       Please put on your headphones and listen. The voice loading may take a moment.
       Thank you for your patience!
     </p>
-    <!-- TODO: After open sourcing, replace the following three hrefs with real links -->
+    <!-- TODO: 开源后把下面三个 href 换成真实链接 -->
     <div class="cta">
       <a class="btn" href="#"><span class="ico" aria-hidden="true">💻</span>Github Code</a>
       <a class="btn" href="#"><span class="ico" aria-hidden="true">🤗</span>HuggingFace Checkpoint</a>
@@ -42,6 +42,7 @@
     <a href="#introduction"><span class="ico" aria-hidden="true">⚡️</span>Introduction</a>
     <a href="#recon"><span class="ico" aria-hidden="true">♻️</span>Reconstruction</a>
     <a href="#audio"><span class="ico" aria-hidden="true">🎤</span>TTS</a>
+    <a href="#understanding"><span class="ico" aria-hidden="true">🧠</span>Understanding</a>
     <a href="#edit"><span class="ico" aria-hidden="true">✂️</span>Editing</a>
   </nav>
 
@@ -98,6 +99,20 @@
       <div id="audio-root" class="stack"></div>
     </section>
 
+    <section id="understanding" class="section">
+      <div class="section-head">
+        <h2>Understanding Demos</h2>
+        <p>
+          Spatial speech understanding. Each clip is probed with five questions — direction,
+          up / down, distance, motion state, and transcription — and the answers are set
+          against the ground truth. A green tick marks a prediction that matches; the full
+          predicted sentence is printed alongside so the reasoning is visible, not just the
+          label.
+        </p>
+      </div>
+      <div id="understanding-root" class="stack"></div>
+    </section>
+
     <section id="edit" class="section">
       <div class="section-head">
         <h2>Editing Demos</h2>
@@ -116,6 +131,7 @@
   </main>
 
   <footer class="foot">
+    <p class="foot-title">@ SpiderAudio: Unified Binaural Representation for Joint Spatial Speech Understanding, Generation and Editing.</p>
     <p>Anonymous supplementary material · ICLR 2027</p>
   </footer>
 
