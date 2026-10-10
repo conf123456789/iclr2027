@@ -304,10 +304,30 @@ main {
   font-weight: 650;
 }
 
+/* 小节标题里的图标要跟着标题字号缩放，覆盖 .ico 的固定 1rem */
+.section-head h2 .ico {
+  margin-right: 0.4rem;
+  font-size: 0.85em;
+}
+
 .section-head p {
   margin: 0;
   color: var(--muted);
   max-width: none;
+}
+
+/* section 内的提示条（与页头 .hint 同一套视觉语言）。
+   选择器要压过 .section-head p，否则 margin/color 会被覆盖。 */
+.section-head p.callout {
+  margin: 1rem 0 0;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: rgba(95, 208, 165, 0.13);
+  border-radius: 0 8px 8px 0;
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.55;
 }
 
 .stack {
