@@ -110,6 +110,99 @@ function renderGroups(root, groups, emptyText) {
   }
 }
 
+const UNDERSTANDING_TASKS = [
+  { key: "Dir",    label: "Direction" },
+  { key: "Updown", label: "Up / Down" },
+  { key: "Dist",   label: "Distance" },
+  { key: "Motion", label: "Motion" },
+];
+
+function buildUnderstandingTable(clips, wavPrefix) {
+  const wrap = el("div", "table-wrap");
+  const table = el("table", "demo-table");
+
+  const thead = document.createElement("thead");
+  const hrow = document.createElement("tr");
+  hrow.appendChild(el("th", null, "Clip"));
+  for (const t of UNDERSTANDING_TASKS) hrow.appendChild(el("th", null, t.label));
+  hrow.appendChild(el("th", null, "ASR"));
+  thead.appendChild(hrow);
+  table.appendChild(thead);
+
+  const tbody = document.createElement("tbody");
+  for (const clip of clips) {
+    const row = document.createElement("tr");
+
+    // 音频列
+    const tdClip = el("td", "clip-col");
+    tdClip.appendChild(el("span", "clip-id", clip.clip_id));
+    const audio = document.createElement("audio");
+    audio.controls = true;
+    audio.preload = "metadata";
+    audio.src = wavPrefix + String(clip.wav || "").replace(/^audio\//, "");
+    tdClip.appendChild(audio);
+    row.appendChild(tdClip);
+
+    // 四项标签任务
+    for (const t of UNDERSTANDING_TASKS) {
+      const v = clip[t.key] || {};
+      const ok = v.gt_label === v.pred_label;
+      const td = el("td", ok ? "cell ok" : "cell bad");
+      td.title = `ground truth: ${v.gt_label ?? "—"}`;
+      td.appendChild(el("span", "pred", v.pred_label ?? "—"));
+      td.appendChild(el("span", "mark", ok ? "✓" : "✗"));
+      row.appendChild(td);
+    }
+
+    // ASR 列
+    const tdAsr = el("td", "asr-col", clip.ASR?.pred_text || "");
+    row.appendChild(tdAsr);
+
+    tbody.appendChild(row);
+  }
+  table.appendChild(tbody);
+  wrap.appendChild(table);
+  return wrap;
+}
+
+function renderUnderstanding(root, cfg) {
+  if (!root) return;
+  root.replaceChildren();
+  if (!cfg?.results) {
+    root.appendChild(el("p", "empty", "No understanding results configured."));
+    return;
+  }
+
+  fetch(cfg.results, { cache: "no-store" })
+    .then((res) => {
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return res.json();
+    })
+    .then((data) => {
+      const byMotion = new Map();
+      for (const clip of data.clips || []) {
+        const m = clip.motion || "other";
+        if (!byMotion.has(m)) byMotion.set(m, []);
+        byMotion.get(m).push(clip);
+      }
+      root.replaceChildren();
+      for (const [motion, clips] of byMotion) {
+        const box = el("div", "demo-group");
+        box.appendChild(el("h3", null, motion.charAt(0).toUpperCase() + motion.slice(1)));
+        box.appendChild(
+          el("p", "note", `Questions asked: ${(data.require || []).join(" · ") || "—"}`)
+        );
+        box.appendChild(buildUnderstandingTable(clips, cfg.wavPrefix || ""));
+        root.appendChild(box);
+      }
+    })
+    .catch((err) => {
+      root.replaceChildren();
+      root.appendChild(el("p", "empty", "Could not load the understanding results."));
+      console.error(err);
+    });
+}
+
 async function main() {
   try {
     const data = await loadDemos();
@@ -137,6 +230,7 @@ async function main() {
     if (editRoot) {
       renderGroups(editRoot, data.edit, "No editing examples yet. Edit demos.json and add files under assets/audio/edit/.");
     }
+    renderUnderstanding(document.getElementById("understanding-root"), data.understanding);
     const imageRoot = document.getElementById("image-root");
     if (imageRoot) renderImages(imageRoot, data.images);
   } catch (err) {
