@@ -193,19 +193,22 @@ h3 {
   letter-spacing: 0.01em;
 }
 
-.jump {
+.jumpbar {
   position: sticky;
   top: 0;
   z-index: 20;
+  background: rgba(15, 20, 18, 0.86);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+.jump {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0.85rem 1.5rem;
-  background: rgba(15, 20, 18, 0.86);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--line);
+  padding: 0.55rem 1.5rem 0.85rem;
 }
 
 .cta {
@@ -253,7 +256,7 @@ h3 {
 .guide {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0.75rem 1.5rem 0;
   color: var(--muted);
   font-size: 0.88rem;
 }
