@@ -1679,7 +1679,7 @@
     }
   ],
   "understanding": {
-    "tasks": [
+    "columns": [
       {
         "key": "Dir",
         "label": "Direction"
@@ -1695,9 +1695,12 @@
       {
         "key": "Motion",
         "label": "Motion"
+      },
+      {
+        "key": "ASR",
+        "label": "ASR"
       }
     ],
-    "note": "Questions asked: Dir · Updown · Dist · Motion · ASR",
     "groups": [
       {
         "title": "Static",
@@ -1705,73 +1708,109 @@
           {
             "id": "4446-2275-0006",
             "src": "assets/audio/understanding/static/4446-2275-0006.wav",
-            "Dir": {
-              "gt": "front",
-              "pred": "front"
-            },
-            "Updown": {
-              "gt": "above",
-              "pred": "above"
-            },
-            "Dist": {
-              "gt": "mid",
-              "pred": "mid"
-            },
-            "Motion": {
-              "gt": "static",
-              "pred": "static"
-            },
-            "ASR": {
-              "gt": "i thought it might be sister kate or cousin mike would be happening along",
-              "pred": "I thought it might be sister Kate or cousin Mike would be happening along."
+            "tasks": {
+              "Dir": {
+                "gt": "front",
+                "gt_num": "2.8°",
+                "pred": "front",
+                "pred_num": "2.0°"
+              },
+              "Updown": {
+                "gt": "above",
+                "gt_num": "",
+                "pred": "above",
+                "pred_num": "25°"
+              },
+              "Dist": {
+                "gt": "mid",
+                "gt_num": "",
+                "pred": "mid",
+                "pred_num": "3 m"
+              },
+              "Motion": {
+                "gt": "static",
+                "gt_num": "",
+                "pred": "static",
+                "pred_num": ""
+              },
+              "ASR": {
+                "gt": "i thought it might be sister kate or cousin mike would be happening along",
+                "gt_num": "",
+                "pred": "I thought it might be sister Kate or cousin Mike would be happening along.",
+                "pred_num": ""
+              }
             }
           },
           {
             "id": "4507-16021-0025",
             "src": "assets/audio/understanding/static/4507-16021-0025.wav",
-            "Dir": {
-              "gt": "back",
-              "pred": "back"
-            },
-            "Updown": {
-              "gt": "level",
-              "pred": "level"
-            },
-            "Dist": {
-              "gt": "mid",
-              "pred": "mid"
-            },
-            "Motion": {
-              "gt": "static",
-              "pred": "static"
-            },
-            "ASR": {
-              "gt": "to meet the needs of this conflict wretchedness has invented a language of combat which is slang",
-              "pred": "To meet the needs of this conflict, wretchedness has invented a language of combat, which is slang."
+            "tasks": {
+              "Dir": {
+                "gt": "back",
+                "gt_num": "183.0°",
+                "pred": "back",
+                "pred_num": "183.0°"
+              },
+              "Updown": {
+                "gt": "level",
+                "gt_num": "",
+                "pred": "level",
+                "pred_num": "-10°"
+              },
+              "Dist": {
+                "gt": "mid",
+                "gt_num": "",
+                "pred": "mid",
+                "pred_num": "2 m"
+              },
+              "Motion": {
+                "gt": "static",
+                "gt_num": "",
+                "pred": "static",
+                "pred_num": ""
+              },
+              "ASR": {
+                "gt": "to meet the needs of this conflict wretchedness has invented a language of combat which is slang",
+                "gt_num": "",
+                "pred": "To meet the needs of this conflict, wretchedness has invented a language of combat, which is slang.",
+                "pred_num": ""
+              }
             }
           },
           {
             "id": "5142-36377-0007",
             "src": "assets/audio/understanding/static/5142-36377-0007.wav",
-            "Dir": {
-              "gt": "front",
-              "pred": "front"
-            },
-            "Updown": {
-              "gt": "below",
-              "pred": "below"
-            },
-            "Dist": {
-              "gt": "mid",
-              "pred": "mid"
-            },
-            "Motion": {
-              "gt": "static",
-              "pred": "static"
-            },
-            "ASR": {
-              "gt": "a little cracked that in the popular phrase was my impression of the stranger who now made his appearance in the supper room",
-              "pred": "A little cracked, that in the popular phrase was my impression of the stranger who now made his appearance in the supper room."
+            "tasks": {
+              "Dir": {
+                "gt": "front",
+                "gt_num": "358.0°",
+                "pred": "front",
+                "pred_num": "358.0°"
+              },
+              "Updown": {
+                "gt": "below",
+                "gt_num": "",
+                "pred": "below",
+                "pred_num": "-17°"
+              },
+              "Dist": {
+                "gt": "mid",
+                "gt_num": "",
+                "pred": "mid",
+                "pred_num": "1.6 m"
+              },
+              "Motion": {
+                "gt": "static",
+                "gt_num": "",
+                "pred": "static",
+                "pred_num": ""
+              },
+              "ASR": {
+                "gt": "a little cracked that in the popular phrase was my impression of the stranger who now made his appearance in the supper room",
+                "gt_num": "",
+                "pred": "A little cracked, that in the popular phrase was my impression of the stranger who now made his appearance in the supper room.",
+                "pred_num": ""
+              }
             }
           }
         ]
@@ -1782,73 +1821,109 @@
           {
             "id": "4507-16021-0050",
             "src": "assets/audio/understanding/move/4507-16021-0050.wav",
-            "Dir": {
-              "gt": "from front to back-left",
-              "pred": "from front to back-left"
-            },
-            "Updown": {
-              "gt": "from above to below",
-              "pred": "from above to below"
-            },
-            "Dist": {
-              "gt": "from mid to near",
-              "pred": "from mid to near"
-            },
-            "Motion": {
-              "gt": "move",
-              "pred": "move"
-            },
-            "ASR": {
-              "gt": "and you belong to that small class who are happy",
-              "pred": "And you belong to that small class who are happy."
+            "tasks": {
+              "Dir": {
+                "gt": "from front to back-left",
+                "gt_num": "9.7° → 131.0°",
+                "pred": "from front to back-left",
+                "pred_num": "11.0° → 125.0°"
+              },
+              "Updown": {
+                "gt": "from above to below",
+                "gt_num": "",
+                "pred": "from above to below",
+                "pred_num": "40° → -27°"
+              },
+              "Dist": {
+                "gt": "from mid to near",
+                "gt_num": "",
+                "pred": "from mid to near",
+                "pred_num": "2 m → 0.5 m"
+              },
+              "Motion": {
+                "gt": "move",
+                "gt_num": "",
+                "pred": "move",
+                "pred_num": ""
+              },
+              "ASR": {
+                "gt": "and you belong to that small class who are happy",
+                "gt_num": "",
+                "pred": "And you belong to that small class who are happy.",
+                "pred_num": ""
+              }
             }
           },
           {
             "id": "5142-33396-0019",
             "src": "assets/audio/understanding/move/5142-33396-0019.wav",
-            "Dir": {
-              "gt": "from back-left to front",
-              "pred": "from back-left to front"
-            },
-            "Updown": {
-              "gt": "above",
-              "pred": "above"
-            },
-            "Dist": {
-              "gt": "mid",
-              "pred": "mid"
-            },
-            "Motion": {
-              "gt": "move",
-              "pred": "move"
-            },
-            "ASR": {
-              "gt": "oh it is better to live on the sea and let other men raise your crops and cook your meals",
-              "pred": "Oh, it is better to live on the sea and let other men raise your crops and cook your meals."
+            "tasks": {
+              "Dir": {
+                "gt": "from back-left to front",
+                "gt_num": "142.7° → 9.1°",
+                "pred": "from back-left to front",
+                "pred_num": "137.0° → 13.0°"
+              },
+              "Updown": {
+                "gt": "above",
+                "gt_num": "",
+                "pred": "above",
+                "pred_num": "28° → 30°"
+              },
+              "Dist": {
+                "gt": "mid",
+                "gt_num": "",
+                "pred": "mid",
+                "pred_num": "1.8 m → 3.5 m"
+              },
+              "Motion": {
+                "gt": "move",
+                "gt_num": "",
+                "pred": "move",
+                "pred_num": ""
+              },
+              "ASR": {
+                "gt": "oh it is better to live on the sea and let other men raise your crops and cook your meals",
+                "gt_num": "",
+                "pred": "Oh, it is better to live on the sea and let other men raise your crops and cook your meals.",
+                "pred_num": ""
+              }
             }
           },
           {
             "id": "260-123440-0003",
             "src": "assets/audio/understanding/move/260-123440-0003.wav",
-            "Dir": {
-              "gt": "from front to right",
-              "pred": "from front to right"
-            },
-            "Updown": {
-              "gt": "from level to above",
-              "pred": "from level to above"
-            },
-            "Dist": {
-              "gt": "near",
-              "pred": "near"
-            },
-            "Motion": {
-              "gt": "move",
-              "pred": "move"
-            },
-            "ASR": {
-              "gt": "oh won't she be savage if i've kept her waiting",
-              "pred": "Oh, won't she be savage if I've kept her waiting?"
+            "tasks": {
+              "Dir": {
+                "gt": "from front to right",
+                "gt_num": "348.1° → 272.1°",
+                "pred": "from front to right",
+                "pred_num": "347.0° → 286.0°"
+              },
+              "Updown": {
+                "gt": "from level to above",
+                "gt_num": "",
+                "pred": "from level to above",
+                "pred_num": "-1° → 38°"
+              },
+              "Dist": {
+                "gt": "near",
+                "gt_num": "",
+                "pred": "near",
+                "pred_num": "2.5 m → 1.4 m"
+              },
+              "Motion": {
+                "gt": "move",
+                "gt_num": "",
+                "pred": "move",
+                "pred_num": ""
+              },
+              "ASR": {
+                "gt": "oh won't she be savage if i've kept her waiting",
+                "gt_num": "",
+                "pred": "Oh, won't she be savage if I've kept her waiting?",
+                "pred_num": ""
+              }
             }
           }
         ]
@@ -1859,73 +1934,109 @@
           {
             "id": "2961-960-0007",
             "src": "assets/audio/understanding/orbit/2961-960-0007.wav",
-            "Dir": {
-              "gt": "circling",
-              "pred": "circling"
-            },
-            "Updown": {
-              "gt": "level",
-              "pred": "level"
-            },
-            "Dist": {
-              "gt": "mid",
-              "pred": "mid"
-            },
-            "Motion": {
-              "gt": "orbit",
-              "pred": "orbit"
-            },
-            "ASR": {
-              "gt": "but they have nothing to do with the interpretation of plato and in spirit they are opposed to him",
-              "pred": "But they have nothing to do with the interpretation of Plato and in spirit they are opposed to him."
+            "tasks": {
+              "Dir": {
+                "gt": "circling",
+                "gt_num": "6.8°",
+                "pred": "circling",
+                "pred_num": "7.0°"
+              },
+              "Updown": {
+                "gt": "level",
+                "gt_num": "",
+                "pred": "level",
+                "pred_num": "5°"
+              },
+              "Dist": {
+                "gt": "mid",
+                "gt_num": "",
+                "pred": "mid",
+                "pred_num": "3 m"
+              },
+              "Motion": {
+                "gt": "orbit",
+                "gt_num": "",
+                "pred": "orbit",
+                "pred_num": ""
+              },
+              "ASR": {
+                "gt": "but they have nothing to do with the interpretation of plato and in spirit they are opposed to him",
+                "gt_num": "",
+                "pred": "But they have nothing to do with the interpretation of Plato and in spirit they are opposed to him.",
+                "pred_num": ""
+              }
             }
           },
           {
             "id": "3575-170457-0044",
             "src": "assets/audio/understanding/orbit/3575-170457-0044.wav",
-            "Dir": {
-              "gt": "circling",
-              "pred": "circling"
-            },
-            "Updown": {
-              "gt": "level",
-              "pred": "level"
-            },
-            "Dist": {
-              "gt": "mid",
-              "pred": "mid"
-            },
-            "Motion": {
-              "gt": "orbit",
-              "pred": "orbit"
-            },
-            "ASR": {
-              "gt": "after this disappointment i never dare reckon with certainty on the enjoyment of a pleasure again it seems as if some fatality stood between you and me",
-              "pred": "After this disappointment, I never dare reckon with certainty on the enjoyment of a pleasure again. It seems as if some fatality stood between you and me."
+            "tasks": {
+              "Dir": {
+                "gt": "circling",
+                "gt_num": "180.2°",
+                "pred": "circling",
+                "pred_num": "182.0°"
+              },
+              "Updown": {
+                "gt": "level",
+                "gt_num": "",
+                "pred": "level",
+                "pred_num": "-1°"
+              },
+              "Dist": {
+                "gt": "mid",
+                "gt_num": "",
+                "pred": "mid",
+                "pred_num": "3 m"
+              },
+              "Motion": {
+                "gt": "orbit",
+                "gt_num": "",
+                "pred": "orbit",
+                "pred_num": ""
+              },
+              "ASR": {
+                "gt": "after this disappointment i never dare reckon with certainty on the enjoyment of a pleasure again it seems as if some fatality stood between you and me",
+                "gt_num": "",
+                "pred": "After this disappointment, I never dare reckon with certainty on the enjoyment of a pleasure again. It seems as if some fatality stood between you and me.",
+                "pred_num": ""
+              }
             }
           },
           {
             "id": "672-122797-0067",
             "src": "assets/audio/understanding/orbit/672-122797-0067.wav",
-            "Dir": {
-              "gt": "circling",
-              "pred": "circling"
-            },
-            "Updown": {
-              "gt": "level",
-              "pred": "level"
-            },
-            "Dist": {
-              "gt": "mid",
-              "pred": "mid"
-            },
-            "Motion": {
-              "gt": "orbit",
-              "pred": "orbit"
-            },
-            "ASR": {
-              "gt": "the trunks were moved the tree was pulled out and thrown rather hard it is true down on the floor but a man drew him towards the stairs where the daylight shone",
-              "pred": "The trunks were moved, the tree was pulled out and thrown rather hard, it is true, down on the floor. But a man drew him towards the stairs where the daylight shone."
+            "tasks": {
+              "Dir": {
+                "gt": "circling",
+                "gt_num": "346.9°",
+                "pred": "circling",
+                "pred_num": "354.0°"
+              },
+              "Updown": {
+                "gt": "level",
+                "gt_num": "",
+                "pred": "level",
+                "pred_num": "5°"
+              },
+              "Dist": {
+                "gt": "mid",
+                "gt_num": "",
+                "pred": "mid",
+                "pred_num": "3 m"
+              },
+              "Motion": {
+                "gt": "orbit",
+                "gt_num": "",
+                "pred": "orbit",
+                "pred_num": ""
+              },
+              "ASR": {
+                "gt": "the trunks were moved the tree was pulled out and thrown rather hard it is true down on the floor but a man drew him towards the stairs where the daylight shone",
+                "gt_num": "",
+                "pred": "The trunks were moved, the tree was pulled out and thrown rather hard, it is true, down on the floor. But a man drew him towards the stairs where the daylight shone.",
+                "pred_num": ""
+              }
             }
           }
         ]
