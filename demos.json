@@ -1677,5 +1677,9 @@
         }
       ]
     }
-  ]
+  ],
+  "understanding": {
+    "results": "assets/audio/understanding/understanding_results.json",
+    "wavPrefix": "assets/audio/understanding/"
+  }
 }
