@@ -146,12 +146,13 @@ h3 {
 .hint {
   margin: 1.1rem 0 0;
   max-width: 38rem;
-  padding: 0.7rem 0.95rem;
-  border-left: 2px solid var(--accent);
-  background: var(--accent-dim);
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: rgba(95, 208, 165, 0.13);
   border-radius: 0 8px 8px 0;
-  color: var(--ink);
-  font-size: 0.92rem;
+  color: var(--accent);
+  font-size: 0.98rem;
+  font-weight: 500;
   line-height: 1.5;
 }
 
@@ -243,8 +244,8 @@ h3 {
 .cta-note {
   margin: 0.85rem 0 0;
   max-width: 38rem;
-  color: var(--muted);
-  font-size: 0.88rem;
+  color: var(--accent);
+  font-size: 0.95rem;
   font-weight: 700;
   line-height: 1.5;
 }
@@ -466,6 +467,88 @@ main {
   background: var(--accent);
 }
 
+/* ---------- 理解任务结果表 ---------- */
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.04), transparent 55%);
+}
+
+.demo-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.demo-table th {
+  padding: 0.7rem 0.8rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.demo-table td {
+  padding: 0.75rem 0.8rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+  color: var(--muted);
+}
+
+.demo-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.demo-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.demo-table .clip-col {
+  width: 11rem;
+}
+
+.clip-id {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--muted);
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.72rem;
+}
+
+.demo-table audio {
+  display: block;
+  width: 100%;
+  height: 34px;
+}
+
+.demo-table .pred {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.demo-table .mark {
+  margin-left: 0.4rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.demo-table .cell.bad .mark,
+.demo-table .cell.bad .pred {
+  color: var(--warn);
+}
+
+.demo-table .asr-col {
+  min-width: 15rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
 .demo-group > .note {
   margin: 0 0 1.25rem;
   color: var(--muted);
@@ -505,6 +588,18 @@ main {
   margin: 0;
   padding-top: 1.5rem;
   border-top: 1px solid var(--line);
+}
+
+/* 只有第一行带顶部分隔线，后续行紧接其上 */
+.foot p + p {
+  margin-top: 0.65rem;
+  padding-top: 0;
+  border-top: none;
+}
+
+.foot-title {
+  color: var(--ink);
+  font-weight: 600;
 }
 
 @media (prefers-reduced-motion: reduce) {
