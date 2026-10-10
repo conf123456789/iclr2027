@@ -490,6 +490,34 @@ main {
   background: var(--accent);
 }
 
+.demo-group > .note {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* 卡片里带标签的说明行（Text / Instruction / Style / Spatial …） */
+.example .detail {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.detail-label {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding: 0.05rem 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  vertical-align: 0.1em;
+}
+
 /* ---------- 理解任务结果表（任务作行，clip 作列） ---------- */
 
 .table-wrap {
@@ -591,6 +619,32 @@ main {
 /* 每个任务块之间加一条分隔线 */
 .ux-table tr.gt-row > * {
   border-top: 1px solid var(--line);
+}
+
+.foot {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.foot p {
+  margin: 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+/* 只有第一行带顶部分隔线，后续行紧接其上 */
+.foot p + p {
+  margin-top: 0.65rem;
+  padding-top: 0;
+  border-top: none;
+}
+
+.foot-title {
+  color: var(--ink);
+  font-weight: 600;
 }
 
 @media (prefers-reduced-motion: reduce) {
